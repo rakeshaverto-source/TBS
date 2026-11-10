@@ -1,0 +1,1107 @@
+{
+  "Class I": {
+    "className": "Class I",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "Step Ahead – 1 (A Book of Grammar and Composition)",
+            "publisher": "Rohan Book Company Pvt. Ltd."
+          },
+          {
+            "sr": "2",
+            "title": "Meadows Main Course Book of English Reader(Workbook Style) - 1",
+            "publisher": "Rohan Book Company Pvt. Ltd"
+          },
+          {
+            "sr": "3",
+            "title": "Cursive Writing - 1",
+            "publisher": "STC Publishing House"
+          },
+          {
+            "sr": "4",
+            "title": "Learnwell Smart Mathematics-1",
+            "publisher": "Holy Faith International"
+          },
+          {
+            "sr": "5",
+            "title": "Mind Maths -1",
+            "publisher": "Global Rise Publications"
+          },
+          {
+            "sr": "6",
+            "title": "Environmental Studies - 1",
+            "publisher": "Medalist Publications"
+          },
+          {
+            "sr": "7",
+            "title": "Swar Surbhi Nitty Gritty-1",
+            "publisher": "Ample Publications"
+          },
+          {
+            "sr": "8",
+            "title": "Art of Drawing & Colouring -1",
+            "publisher": "Firefly book"
+          },
+          {
+            "sr": "9",
+            "title": "Cyber Quest-1",
+            "publisher": "KIPS Learning"
+          },
+          {
+            "sr": "10",
+            "title": "Wonders Of GK-1",
+            "publisher": "Tuk Publications"
+          },
+          {
+            "sr": "11",
+            "title": "Ready for Life-1 (An Insight Into Life Skills)",
+            "publisher": "Charles Baker Books"
+          }
+        ]
+      }
+    ]
+  },
+  "Class II": {
+    "className": "Class II",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "Step Ahead – 2 (A Book of Grammar and Composition)",
+            "publisher": "Rohan Book Company Pvt. Ltd."
+          },
+          {
+            "sr": "2",
+            "title": "Meadows Main Course Book of English Reader(Workbook Style) - 2",
+            "publisher": "Rohan Book Company Pvt. Ltd"
+          },
+          {
+            "sr": "3",
+            "title": "Cursive Writing - 2",
+            "publisher": "STC Publishing House"
+          },
+          {
+            "sr": "4",
+            "title": "Learnwell Smart Mathematics-2",
+            "publisher": "Holy Faith International"
+          },
+          {
+            "sr": "5",
+            "title": "Mind Maths -2",
+            "publisher": "Global Rise Publications"
+          },
+          {
+            "sr": "6",
+            "title": "Environmental Studies - 2",
+            "publisher": "Medalist Publications"
+          },
+          {
+            "sr": "7",
+            "title": "Navtarang-2",
+            "publisher": "Indiannica Learning"
+          },
+          {
+            "sr": "8",
+            "title": "Anugunj Hindi Vyakaran",
+            "publisher": "Jyoti Book Depot"
+          },
+          {
+            "sr": "9",
+            "title": "Art of Drawing & Colouring -2",
+            "publisher": "Firefly book"
+          },
+          {
+            "sr": "10",
+            "title": "Cyber Quest-2",
+            "publisher": "KIPS Learning"
+          },
+          {
+            "sr": "11",
+            "title": "Wonders Of GK-2",
+            "publisher": "Tuk Publications"
+          },
+          {
+            "sr": "12",
+            "title": "Ready for Life-2 (An Insight Into Life Skills)",
+            "publisher": "Charles Baker Books"
+          }
+        ]
+      }
+    ]
+  },
+  "Class III": {
+    "className": "Class III",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "Step Ahead -3 (A Book of Grammar and Composition)",
+            "publisher": "Rohan Book Company Pvt. Ltd."
+          },
+          {
+            "sr": "2",
+            "title": "Meadows Main Course Book of English Reader(Workbook Style) -3",
+            "publisher": "Rohan Book Company Pvt. Ltd"
+          },
+          {
+            "sr": "3",
+            "title": "Cursive Writing -3",
+            "publisher": "STC Publishing House"
+          },
+          {
+            "sr": "4",
+            "title": "Learnwell Smart Mathematics -3",
+            "publisher": "Holy Faith International"
+          },
+          {
+            "sr": "5",
+            "title": "Mind Maths -3",
+            "publisher": "Global Rise Publications"
+          },
+          {
+            "sr": "6",
+            "title": "Learning Science 2.0 -3",
+            "publisher": "Creative Kids"
+          },
+          {
+            "sr": "7",
+            "title": "Navtarang-3(Text cum Workbook)",
+            "publisher": "Indiannica Learning"
+          },
+          {
+            "sr": "8",
+            "title": "Vyakaran Surbhi -3",
+            "publisher": "Ample Publications"
+          },
+          {
+            "sr": "9",
+            "title": "Art of Drawing & Colouring -3",
+            "publisher": "Firefly book"
+          },
+          {
+            "sr": "10",
+            "title": "Son Rishma Shabad Abhiyas",
+            "publisher": "SP Books"
+          },
+          {
+            "sr": "11",
+            "title": "Mon Passeport –A (French)",
+            "publisher": "Unisec Publications"
+          },
+          {
+            "sr": "12",
+            "title": "Cyber Quest-3",
+            "publisher": "KIPS Learning"
+          },
+          {
+            "sr": "13",
+            "title": "Wonders Of GK-3",
+            "publisher": "Tuk Publications"
+          },
+          {
+            "sr": "14",
+            "title": "Ready for Life-3 (An Insight Into Life Skills)",
+            "publisher": "Charles Baker Books"
+          }
+        ]
+      }
+    ]
+  },
+  "Class IV": {
+    "className": "Class IV",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "Step Ahead -4 (A Book of Grammar and Composition)",
+            "publisher": "Rohan Book Company Pvt. Ltd."
+          },
+          {
+            "sr": "2",
+            "title": "Meadows Main Course Book of English Reader(Workbook Style) -4",
+            "publisher": "Rohan Book Company Pvt. Ltd"
+          },
+          {
+            "sr": "3",
+            "title": "Learnwell Smart Mathematics -4",
+            "publisher": "Holy Faith International"
+          },
+          {
+            "sr": "4",
+            "title": "Mind Maths -4",
+            "publisher": "Global Rise Publications"
+          },
+          {
+            "sr": "5",
+            "title": "Learning Science 2.0 -4",
+            "publisher": "Creative Kids"
+          },
+          {
+            "sr": "6",
+            "title": "Navtarang-4(Text cum Workbook)",
+            "publisher": "Indiannica Learning"
+          },
+          {
+            "sr": "7",
+            "title": "Vyakaran Surbhi -4",
+            "publisher": "Ample Publications"
+          },
+          {
+            "sr": "8",
+            "title": "Art of Drawing & Colouring -4",
+            "publisher": "Firefly book"
+          },
+          {
+            "sr": "9",
+            "title": "Wonders Of GK-4",
+            "publisher": "Tuk Publications"
+          },
+          {
+            "sr": "10",
+            "title": "Cyber Quest-4",
+            "publisher": "KIPS Learning"
+          },
+          {
+            "sr": "11",
+            "title": "Ready for Life-4 (An Insight Into Life Skills)",
+            "publisher": "Charles Baker Books"
+          },
+          {
+            "sr": "12",
+            "title": "Sarab Punjabi Pathmala-0",
+            "publisher": "Mind Makers Publications"
+          },
+          {
+            "sr": "13",
+            "title": "Mon Passeport –0 (French)",
+            "publisher": "Unisec Publications"
+          },
+          {
+            "sr": "14",
+            "title": "Mon Passeport cashier d' activities -0 (French)",
+            "publisher": "Unisec Publications"
+          }
+        ]
+      }
+    ]
+  },
+  "Class V": {
+    "className": "Class V",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "Step Ahead -5 (A Book of Grammar and Composition)",
+            "publisher": "Rohan Book Company Pvt. Ltd."
+          },
+          {
+            "sr": "2",
+            "title": "Meadows Main Course Book of English Reader(Workbook Style) -5",
+            "publisher": "Rohan Book Company Pvt. Ltd"
+          },
+          {
+            "sr": "3",
+            "title": "Learnwell Smart Mathematics -5",
+            "publisher": "Holy Faith International"
+          },
+          {
+            "sr": "4",
+            "title": "Mind Maths -5",
+            "publisher": "Global Rise Publications"
+          },
+          {
+            "sr": "5",
+            "title": "Learning Science 2.0 -5",
+            "publisher": "Creative Kids"
+          },
+          {
+            "sr": "6",
+            "title": "Navtarang-5(Text cum Workbook)",
+            "publisher": "Indiannica Learning"
+          },
+          {
+            "sr": "7",
+            "title": "Vyakaran Surbhi -5",
+            "publisher": "Ample Publications"
+          },
+          {
+            "sr": "8",
+            "title": "Art of Drawing & Colouring -5",
+            "publisher": "Firefly book"
+          },
+          {
+            "sr": "9",
+            "title": "Wonders Of GK-5",
+            "publisher": "Tuk Publications"
+          },
+          {
+            "sr": "10",
+            "title": "Cyber Quest-5",
+            "publisher": "KIPS Learning"
+          },
+          {
+            "sr": "11",
+            "title": "Ready for Life-5 (An Insight Into Life Skills)",
+            "publisher": "Charles Baker Books"
+          },
+          {
+            "sr": "12",
+            "title": "Sarab Punjabi Pathmala-1",
+            "publisher": "Mind Makers Publications"
+          },
+          {
+            "sr": "13",
+            "title": "Mon Passeport –1 (French)",
+            "publisher": "Unisec Publications"
+          },
+          {
+            "sr": "14",
+            "title": "Mon Passeport cashier d'activities -1 (French)",
+            "publisher": "Unisec Publications"
+          }
+        ]
+      }
+    ]
+  },
+  "Class VI": {
+    "className": "Class VI",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "New Directions Mathematics-6",
+            "publisher": "Viva"
+          },
+          {
+            "sr": "2",
+            "title": "Poorvi",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "3",
+            "title": "Step Ahead-6 (A Book of Grammar &Composition)",
+            "publisher": "Rohan Book Company Pvt. Ltd."
+          },
+          {
+            "sr": "4",
+            "title": "Exploring Society-India and Beyond",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "5",
+            "title": "Science In Depth",
+            "publisher": "Prachi"
+          },
+          {
+            "sr": "6",
+            "title": "Malhar",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "7",
+            "title": "Vyakaran Sambhod-6",
+            "publisher": "Madhuban"
+          },
+          {
+            "sr": "8",
+            "title": "Cyber Quest",
+            "publisher": "KIPS Learning"
+          },
+          {
+            "sr": "9",
+            "title": "Wonders of GK-6",
+            "publisher": "Tuk Publications"
+          },
+          {
+            "sr": "10",
+            "title": "Ready for Life (An Insight into Life Skill)",
+            "publisher": "Charles Baker Books"
+          },
+          {
+            "sr": "11",
+            "title": "Mon Passeport- 2 (French)",
+            "publisher": "Unisec Publication"
+          },
+          {
+            "sr": "12",
+            "title": "Mon Passeport Cahier d' activites-2 (French)",
+            "publisher": "Unisec publication"
+          },
+          {
+            "sr": "13",
+            "title": "Sarab Punjabi Pathmala-2",
+            "publisher": "Mind Makers Publication"
+          }
+        ]
+      }
+    ]
+  },
+  "Class VII": {
+    "className": "Class VII",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "New Directions Mathematics-7",
+            "publisher": "Viva"
+          },
+          {
+            "sr": "2",
+            "title": "English Text book-7 Honey Comb Supplementary Reader- An Alien Hand",
+            "publisher": "NCERT NCERT"
+          },
+          {
+            "sr": "3",
+            "title": "Step Ahead-7(A Book of Grammar &Composition)",
+            "publisher": "Rohan Book Company Pvt. Ltd."
+          },
+          {
+            "sr": "4",
+            "title": "Our Past – II",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "5",
+            "title": "Geography – 7",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "6",
+            "title": "Social & Political Life -II (Pol.Science)",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "7",
+            "title": "Science In Depth",
+            "publisher": "Prachi"
+          },
+          {
+            "sr": "8",
+            "title": "Vasant-2",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "9",
+            "title": "Vyakaran Sambhod-7",
+            "publisher": "Madhuban"
+          },
+          {
+            "sr": "10",
+            "title": "Cyber Quest",
+            "publisher": "KIPS Learning"
+          },
+          {
+            "sr": "11",
+            "title": "Wonders of GK-7",
+            "publisher": "Tuk Publications"
+          },
+          {
+            "sr": "12",
+            "title": "Ready for Life(An Insight into Life Skill)",
+            "publisher": "Charles Baker Books"
+          },
+          {
+            "sr": "13",
+            "title": "Mon Passeport- 3 (French)",
+            "publisher": "Unisec Publication"
+          },
+          {
+            "sr": "14",
+            "title": "Mon Passeport Cashier d' activites-3(French)",
+            "publisher": "Unisec Publication"
+          },
+          {
+            "sr": "15",
+            "title": "Sarab Punjabi Pathmala-3",
+            "publisher": "Mind Makers Publication"
+          }
+        ]
+      }
+    ]
+  },
+  "Class VIII": {
+    "className": "Class VIII",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "New Directions Mathematics-8",
+            "publisher": "Viva"
+          },
+          {
+            "sr": "2",
+            "title": "English Text Book-8 Honey Dew Supplementary Reader- It's So Happen",
+            "publisher": "NCERT NCERT"
+          },
+          {
+            "sr": "3",
+            "title": "Step Ahead-8 (A Book of Grammar &Composition)",
+            "publisher": "Rohan Book Company Pvt. Ltd."
+          },
+          {
+            "sr": "4",
+            "title": "History - Our Past III – 8",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "5",
+            "title": "Geography – 8 - Resource & Development",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "6",
+            "title": "Social & Political Life -III (Pol.Science)",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "7",
+            "title": "Science In Depth",
+            "publisher": "Prachi"
+          },
+          {
+            "sr": "8",
+            "title": "Vasant -3",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "9",
+            "title": "Vyakaran Sambodh-8",
+            "publisher": "Madhuban"
+          },
+          {
+            "sr": "10",
+            "title": "Cyber Quest",
+            "publisher": "KIPS Learning"
+          },
+          {
+            "sr": "11",
+            "title": "Wonders of GK-8",
+            "publisher": "Tuk Publications"
+          },
+          {
+            "sr": "12",
+            "title": "Ready for Life (An Insight into Life Skill)",
+            "publisher": "Charles Baker Books"
+          },
+          {
+            "sr": "13",
+            "title": "Mon Passeport- 4 (French)",
+            "publisher": "Unisec Publication"
+          },
+          {
+            "sr": "14",
+            "title": "Mon Passeport Cahier d' activites-4 (French)",
+            "publisher": "Unisec Publication"
+          },
+          {
+            "sr": "15",
+            "title": "Sarab Punjabi Pathmala-4",
+            "publisher": "Mind Makers Publication"
+          }
+        ]
+      }
+    ]
+  },
+  "Class IX": {
+    "className": "Class IX",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "English: Beehive Moments",
+            "publisher": "NCERT NCERT"
+          },
+          {
+            "sr": "2",
+            "title": "Maths: Mathematics-IX Maths Lab Manual",
+            "publisher": "NCERT AARSH BOOKS"
+          },
+          {
+            "sr": "3",
+            "title": "Hindi:Sanchayan-1 Sparsh-1 Vyakaran Pracharini (9) Course-B",
+            "publisher": "NCERT NCERT Chandan"
+          },
+          {
+            "sr": "4",
+            "title": "Science: Science IX Science Lab Manual",
+            "publisher": "NCERT AARASH BOOKS"
+          },
+          {
+            "sr": "5",
+            "title": "S.SC: India and the Contemporary World-I (History) Contemporary India-I (Geography) Economics Democratic Politics-1 Disaster Management-Together, towards a safer India- Part II",
+            "publisher": "NCERT NCERT NCERT NCERT NCERT"
+          },
+          {
+            "sr": "6",
+            "title": "Physical Education: Physical Practical-1",
+            "publisher": "E5 Publisher"
+          },
+          {
+            "sr": "7",
+            "title": "IT: Information Technology -402 EmployabilitySkills-402",
+            "publisher": "CBSE(NCERT)"
+          },
+          {
+            "sr": "8",
+            "title": "Punjabi: Literature: Vangi 9 Sahit Mala 9 Language: Punjabi Vyakaran and Likhat Rachna",
+            "publisher": "NCERT NCERT Rishab Publication"
+          },
+          {
+            "sr": "9",
+            "title": "Introduction To Financial Market and Employability Skills: (405)",
+            "publisher": "CBSE (NCERT)"
+          },
+          {
+            "sr": "10",
+            "title": "French -Entre Jeunes(Book &Workbook)",
+            "publisher": "CBSE (NCERT)"
+          }
+        ]
+      },
+      {
+        "title": "Additional Reference Books & Practice",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "Modern abc+ Science Physics-IX",
+            "publisher": "Modern Publishers"
+          },
+          {
+            "sr": "2",
+            "title": "Modern abc+ Science Chemistry-IX",
+            "publisher": "Modern Publishers"
+          },
+          {
+            "sr": "3",
+            "title": "Modern abc+ Science Biology-IX",
+            "publisher": "Modern Publishers"
+          },
+          {
+            "sr": "4",
+            "title": "Maths - IX",
+            "publisher": "M L. Aggarwal (Avichal Publishing Company)"
+          },
+          {
+            "sr": "5",
+            "title": "English- bbc Assignments-IX",
+            "publisher": "Brajindra Book Company"
+          }
+        ]
+      }
+    ]
+  },
+  "Class X": {
+    "className": "Class X",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "English:First Flight Footprints Without Feet",
+            "publisher": "NCERT NCERT"
+          },
+          {
+            "sr": "2",
+            "title": "Maths: Mathematics-X Maths-X Exemplar Maths Lab Manual",
+            "publisher": "NCERT NCERT AARASH BOOKS"
+          },
+          {
+            "sr": "3",
+            "title": "Hindi: Sanchayan-2 Sparsh-2 Vyakaran Pracharini (10) Course-B",
+            "publisher": "NCERT NCERT Chandan"
+          },
+          {
+            "sr": "4",
+            "title": "Science: Science-X Science-X Exempler Science Lab Manual",
+            "publisher": "NCERT NCERT AARSH BOOKS"
+          },
+          {
+            "sr": "5",
+            "title": "S.Sc: India and the Contemporary World-II Contemporary India-II Understanding Economics Development Democratic Politics II Disaster Management-Together,towards a safer India-Part III",
+            "publisher": "NCERT NCERT NCERT NCERT NCERT"
+          },
+          {
+            "sr": "6",
+            "title": "Physical Education: Physical Practical-1",
+            "publisher": "E5 Publisher"
+          },
+          {
+            "sr": "7",
+            "title": "IT: Information Technology – Code 402 Employability Skills",
+            "publisher": "CBSE(NCERT)"
+          },
+          {
+            "sr": "8",
+            "title": "French: Entre Jeune 2 Entre Jeune Workbook",
+            "publisher": "CBSE (NCERT) CBSE (NCERT)"
+          },
+          {
+            "sr": "9",
+            "title": "Introduction To Financial Market and Employability Skills: (405) (Set of 2 books)",
+            "publisher": "CBSE(NCERT)"
+          },
+          {
+            "sr": "10",
+            "title": "Punjabi: Literature: Vangi-10 Sahit Mala-10 Language:Punjabi Vyakaran and Likhat Rachna",
+            "publisher": "NCERT NCERT Rishab Publication"
+          }
+        ]
+      },
+      {
+        "title": "Additional Reference Books & Practice",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "Modern abc+ Science Physics-X",
+            "publisher": "Modern Publishers"
+          },
+          {
+            "sr": "2",
+            "title": "Modern abc+ Science Chemistry-X",
+            "publisher": "Modern Publishers"
+          },
+          {
+            "sr": "3",
+            "title": "Modern abc+ Science Biology-X",
+            "publisher": "Modern Publishers"
+          },
+          {
+            "sr": "4",
+            "title": "Maths – X",
+            "publisher": "M.L. Aggarwal (Avichal Publishing Company)"
+          },
+          {
+            "sr": "5",
+            "title": "English- bbc Assignments-X",
+            "publisher": "Brajindra Book Company"
+          }
+        ]
+      }
+    ]
+  },
+  "Class XI HUMANITIES": {
+    "className": "Class XI HUMANITIES",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "English – 1. Hornbill 2. Snapshots",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "2",
+            "title": "Physical Education: 1. A text book of Physical Education 2. Practical File",
+            "publisher": "Vishvas E5Publisher"
+          },
+          {
+            "sr": "3",
+            "title": "Psychology",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "4",
+            "title": "Political Science: 1. Indian Constitution atwork 2. Political Theory",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "5",
+            "title": "Sociology1.Introducing Sociology 2. Understanding Society",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "6",
+            "title": "Economics1.Introductory Microeconomics 2. Statistic for Economics",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "7",
+            "title": "Painting- Learning objectives of Panoramic Indian Painting",
+            "publisher": "Vishal Publishing Company"
+          },
+          {
+            "sr": "8",
+            "title": "Informatic Practice 065",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "9",
+            "title": "Library Sciences 836",
+            "publisher": "NCERT"
+          }
+        ]
+      },
+      {
+        "title": "Additional Reference Books & Practice",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "Economics",
+            "publisher": "T.R. Jain"
+          },
+          {
+            "sr": "2",
+            "title": "English bbc",
+            "publisher": "Brajendra Book Company"
+          },
+          {
+            "sr": "3",
+            "title": "Psychology",
+            "publisher": "Full Marks"
+          },
+          {
+            "sr": "4",
+            "title": "Sociology",
+            "publisher": "Full Marks"
+          },
+          {
+            "sr": "5",
+            "title": "Political Science",
+            "publisher": "Full Marks"
+          }
+        ]
+      }
+    ]
+  },
+  "Class XI COMMERCE": {
+    "className": "Class XI COMMERCE",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "English – 1.Hornbill 2. Snapshots",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "2",
+            "title": "Physical Education: 1.A text book of Physical Education 2.Practical File",
+            "publisher": "Vishvas E5 Publisher"
+          },
+          {
+            "sr": "3",
+            "title": "AccountancyDouble Entry Book keeping",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "4",
+            "title": "Business Studies",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "5",
+            "title": "Economics1. Introductory Microeconomics 2. Statistics for Economics",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "6",
+            "title": "Informatics Practice 065",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "7",
+            "title": "Cost Accounting 823",
+            "publisher": "NCERT"
+          }
+        ]
+      },
+      {
+        "title": "Additional Reference Books & Practice",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "Economics",
+            "publisher": "T.R. Jain"
+          },
+          {
+            "sr": "2",
+            "title": "English bbc",
+            "publisher": "Brajendra Book Company"
+          },
+          {
+            "sr": "3",
+            "title": "Accountancy",
+            "publisher": "T.S Grewal"
+          },
+          {
+            "sr": "4",
+            "title": "Business Studies",
+            "publisher": "Poonam Gandhi"
+          }
+        ]
+      }
+    ]
+  },
+  "Class XII HUMANITIES": {
+    "className": "Class XII HUMANITIES",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "English:1. Flamingo2. Vistas",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "2",
+            "title": "Physical Education:1. A text book of Physical Education2. Physical Education Practical File",
+            "publisher": "VishvasE5 Publisher"
+          },
+          {
+            "sr": "3",
+            "title": "Psychology",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "4",
+            "title": "Political Science:1. Contemporary World Politics2. Politics in India since Independence",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "5",
+            "title": "Sociology:1. Indian Society2. Social Change and Development in India",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "6",
+            "title": "Economics:1. Introductory Macroeconomics2. Indian Economic Development",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "7",
+            "title": "Fine Arts:Panoramic Indian Painting",
+            "publisher": "Vishal Publishing Company"
+          },
+          {
+            "sr": "8",
+            "title": "Informatics Practice 065",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "9",
+            "title": "Library Science 836",
+            "publisher": "NCERT"
+          }
+        ]
+      },
+      {
+        "title": "Additional Reference Books & Practice",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "Economics",
+            "publisher": "T.R. Jain"
+          },
+          {
+            "sr": "2",
+            "title": "English",
+            "publisher": "BBC Brajendra Book Company"
+          },
+          {
+            "sr": "3",
+            "title": "Sociology",
+            "publisher": "Full Marks"
+          },
+          {
+            "sr": "4",
+            "title": "Political Science",
+            "publisher": "Full Marks"
+          }
+        ]
+      }
+    ]
+  },
+  "Class XII COMMERCE": {
+    "className": "Class XII COMMERCE",
+    "tables": [
+      {
+        "title": "Prescribed Textbooks",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "English:1. Flamingo2. Vistas",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "2",
+            "title": "Physical Education:1. A text book of Physical Education2. Physical Education Practical File",
+            "publisher": "VishvasE5 Publisher"
+          },
+          {
+            "sr": "3",
+            "title": "Accountancy:PART A: Accountancy for Not-for-Profit Organization, Partnership firms and Accounting for CompaniesPART B: Analysis of Financial Statements",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "4",
+            "title": "Business Studies:1. Principles and Functions of Management2. Business finance and Marketing",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "5",
+            "title": "Economics:1. Introductory Macroeconomics2. Indian Economic Development",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "6",
+            "title": "Informatics Practice 065",
+            "publisher": "NCERT"
+          },
+          {
+            "sr": "7",
+            "title": "Cost Accounting 823",
+            "publisher": "NCERT"
+          }
+        ]
+      },
+      {
+        "title": "Additional Reference Books & Practice",
+        "rows": [
+          {
+            "sr": "1",
+            "title": "Economics",
+            "publisher": "T.R. Jain"
+          },
+          {
+            "sr": "2",
+            "title": "English",
+            "publisher": "BBC Brajendra Book Company"
+          },
+          {
+            "sr": "3",
+            "title": "Accountancy",
+            "publisher": "T.S Grewal"
+          },
+          {
+            "sr": "4",
+            "title": "Business Studies",
+            "publisher": "Poonam Gandhi"
+          }
+        ]
+      }
+    ]
+  }
+}

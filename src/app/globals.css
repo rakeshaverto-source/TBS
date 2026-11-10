@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-logo: var(--font-nunito);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* Site-wide: paragraph text ends evenly on the right (justified).
+   Skips text inside centered / right-aligned sections, and any
+   paragraph with its own text-* alignment class wins over this. */
+@layer base {
+  p:not(.text-center *, .text-right *) {
+    text-align: justify;
+    hyphens: auto;
+  }
+}
+
+/* Blog article body (HTML imported from the old WordPress site) */
+.blog-content { color: #334155; font-size: 1.0625rem; line-height: 1.8; }
+.blog-content > * + * { margin-top: 1.1em; }
+.blog-content h2 { scroll-margin-top: 7rem; margin-top: 2em; font-size: 1.6rem; line-height: 1.3; font-weight: 800; color: #1e3a8a; }
+.blog-content h3 { margin-top: 1.6em; font-size: 1.3rem; line-height: 1.35; font-weight: 700; color: #0f172a; }
+.blog-content h4 { margin-top: 1.4em; font-size: 1.1rem; font-weight: 700; color: #0f172a; }
+.blog-content a { color: #e1251b; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.blog-content strong, .blog-content b { color: #0f172a; font-weight: 700; }
+.blog-content ul, .blog-content ol { padding-left: 1.5em; }
+.blog-content ul { list-style: disc; }
+.blog-content ol { list-style: decimal; }
+.blog-content li + li { margin-top: 0.4em; }
+.blog-content li::marker { color: #e1251b; }
+.blog-content img { max-width: 100%; height: auto; border-radius: 1rem; margin-inline: auto; }
+.blog-content figure { margin-block: 1.6em; }
+.blog-content figcaption { margin-top: 0.5em; font-size: 0.875rem; text-align: center; color: #64748b; }
+.blog-content blockquote { border-left: 4px solid #e1251b; padding: 0.4em 0 0.4em 1.2em; font-style: italic; color: #475569; }
+.blog-content table { width: 100%; border-collapse: collapse; font-size: 0.95rem; display: block; overflow-x: auto; }
+.blog-content th, .blog-content td { border: 1px solid #e2e8f0; padding: 0.6em 0.9em; text-align: left; }
+.blog-content th { background: #f1f5f9; font-weight: 700; }
+.blog-content iframe { max-width: 100%; }
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
