@@ -68,7 +68,6 @@ export const beyondAcademicsData = {
       "/beyond-academics/magical-3.webp",
       "/beyond-academics/magical-4.webp",
       "/beyond-academics/magical-5.webp",
-      "/beyond-academics/magical-6.webp",
       "/beyond-academics/magical-7.webp",
     ],
   },

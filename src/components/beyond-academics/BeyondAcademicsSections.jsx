@@ -442,10 +442,7 @@ export function FieldTrips({ data }) {
 export function MagicalMoments({ data }) {
   const [openIndex, setOpenIndex] = useState(null);
   const total = data.images.length;
-  const layout =
-    total === 7
-      ? ["md:col-span-2", "md:col-span-4", "md:col-span-2", "md:col-span-2", "md:col-span-2", "md:col-span-3", "col-span-2 md:col-span-3"]
-      : ["md:col-span-2", "md:col-span-4", "md:col-span-2", "md:col-span-2", "md:col-span-2", "col-span-2 md:col-span-6"];
+  const layout = ["md:col-span-2", "md:col-span-4", "md:col-span-2", "md:col-span-2", "md:col-span-2", "col-span-2 md:col-span-6"];
 
   useEffect(() => {
     if (openIndex === null) return;
@@ -481,7 +478,9 @@ export function MagicalMoments({ data }) {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.07 }}
-              className={`group relative h-44 sm:h-60 md:h-64 rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-2xl ${layout[index] || "md:col-span-2"}`}
+              className={`group relative ${
+                index === total - 1 ? "h-60 sm:h-80 md:h-[28rem]" : "h-44 sm:h-60 md:h-64"
+              } rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-2xl ${layout[index] || "md:col-span-2"}`}
             >
               <img
                 src={src}
