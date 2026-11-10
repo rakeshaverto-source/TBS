@@ -4,9 +4,10 @@ import blogPosts from "./src/data/blogPosts.json" with { type: "json" };
 const nextConfig = {
   // No `output: 'export'`: the admin panel needs the /api routes (MongoDB,
   // Cloudinary, login), which only run on a Node server such as Vercel.
-  // `standalone` also writes .next/standalone: a self-contained folder that runs
-  // on any Node host with `node server.js` (Vercel ignores it).
-  output: 'standalone',
+  // `standalone` writes .next/standalone: a self-contained folder that runs on
+  // any Node host with `node server.js`. Skipped on Vercel, whose build breaks
+  // with it (missing next-server.js.nft.json).
+  output: process.env.VERCEL ? undefined : 'standalone',
   images: {
     unoptimized: true,
   },
