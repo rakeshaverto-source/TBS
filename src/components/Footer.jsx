@@ -40,10 +40,13 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
             <ul className="space-y-3">
               <li><Link href="/" className="text-sm text-slate-400 hover:text-white transition-colors">Home</Link></li>
-              <li><Link href="/#about" className="text-sm text-slate-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/about" className="text-sm text-slate-400 hover:text-white transition-colors">About Us</Link></li>
               <li><Link href="/admissions" className="text-sm text-slate-400 hover:text-white transition-colors">Admissions</Link></li>
               <li><Link href="/beyond-the-classroom" className="text-sm text-yellow-400 hover:text-yellow-300 font-medium transition-colors">Beyond the Classroom</Link></li>
-              <li><Link href="/#campus" className="text-sm text-slate-400 hover:text-white transition-colors">Campus Life</Link></li>
+              <li><Link href="/beyond-academics" className="text-sm text-slate-400 hover:text-white transition-colors">Beyond Academics</Link></li>
+              <li><Link href="/achievements" className="text-sm text-slate-400 hover:text-white transition-colors">Achievements</Link></li>
+              <li><Link href="/press-coverage" className="text-sm text-slate-400 hover:text-white transition-colors">Press Coverage</Link></li>
+              <li><Link href="/contact-us" className="text-sm text-slate-400 hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
           </div>
           
@@ -53,7 +56,13 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link href="/admissions#fees" className="text-sm text-slate-400 hover:text-white transition-colors">Fee Structure</Link></li>
               <li><Link href="/why-families-stay" className="text-sm text-slate-400 hover:text-white transition-colors">Why Families Stay</Link></li>
-              <li><Link href="#" className="text-sm text-slate-400 hover:text-white transition-colors">School Rules</Link></li>
+              <li><Link href="/fee-module" className="text-sm text-slate-400 hover:text-white transition-colors">Fee Module</Link></li>
+              <li><Link href="/mpd" className="text-sm text-slate-400 hover:text-white transition-colors">Mandatory Public Disclosure</Link></li>
+              <li><Link href="/transfer-certificate" className="text-sm text-slate-400 hover:text-white transition-colors">Transfer Certificate</Link></li>
+              <li><Link href="/staff-details" className="text-sm text-slate-400 hover:text-white transition-colors">Staff Details</Link></li>
+              <li><Link href="/annual-report" className="text-sm text-slate-400 hover:text-white transition-colors">Annual Report</Link></li>
+              <li><Link href="/helpline-numbers" className="text-sm text-slate-400 hover:text-white transition-colors">Helpline Numbers</Link></li>
+              <li><Link href="/faq" className="text-sm text-slate-400 hover:text-white transition-colors">FAQ</Link></li>
               <li><Link href="/careers" className="text-sm text-slate-400 hover:text-white transition-colors">Careers</Link></li>
             </ul>
           </div>

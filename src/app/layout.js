@@ -16,8 +16,9 @@ const nunito = Nunito({
 export const metadata = {
   // base for canonical / Open Graph URLs (set NEXT_PUBLIC_SITE_URL if the domain changes)
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://thebharatschool.com"),
-  title: "The Bharat School",
-  description: "Tinkerbelle - Path forward to TBS",
+  title: "Best CBSE Schools in Panchkula - The Bharat School",
+  description:
+    "The Bharat School, Sector 12, Panchkula: a CBSE senior secondary school with Tinkerbelle, its junior branch in Sector 8.",
 };
 
 import SiteChrome from "@/components/SiteChrome";

@@ -7,6 +7,6 @@ export const siteData = {
   address: ["Sector - 12 (Senior Secondary)", "Affiliated to CBSE, New Delhi", "PIN : 134 112"],
   phones: ["+91 9876155746", "0172-256-5400"],
   email: "contact@thebharatschool.com",
-  facebookUrl: "#",
-  instagramUrl: "#",
+  facebookUrl: "https://www.facebook.com/thebharatschoolpkl",
+  instagramUrl: "https://www.instagram.com/thebharatschool/",
 };

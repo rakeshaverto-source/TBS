@@ -3,7 +3,30 @@ import { SITE_URL, getSectionContent } from "@/lib/server/content";
 // Rebuilt every hour so new or edited blog posts get listed
 export const revalidate = 3600;
 
-const PAGES = ["", "/about", "/admissions", "/core-curriculum", "/beyond-academics", "/beyond-the-classroom", "/why-families-stay", "/careers", "/blogs"];
+const PAGES = [
+  "",
+  "/about",
+  "/admissions",
+  "/core-curriculum",
+  "/beyond-academics",
+  "/beyond-the-classroom",
+  "/why-families-stay",
+  "/careers",
+  "/blogs",
+  "/contact-us",
+  "/helpline-numbers",
+  "/faq",
+  "/achievements",
+  "/press-coverage",
+  "/fee-module",
+  "/mpd",
+  "/staff-details",
+  "/transfer-certificate",
+  "/2024-25",
+  "/2025-26",
+  "/annual-report",
+  "/bharat-sports-club",
+];
 
 export default async function sitemap() {
   const { posts } = await getSectionContent("blogs");

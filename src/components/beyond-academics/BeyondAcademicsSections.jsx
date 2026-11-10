@@ -59,7 +59,7 @@ function SectionEyebrow({ children, light = false, center = false }) {
 function ContactButton() {
   return (
     <Link
-      href="/#contact"
+      href="/contact-us"
       className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-bold text-sm bg-[#ef4444] hover:bg-red-600 text-white shadow-[0_4px_14px_0_rgba(239,68,68,0.39)] transition-all hover:-translate-y-0.5"
     >
       Contact Us

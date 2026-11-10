@@ -18,7 +18,7 @@ export default function AboutIntro({ intro, mentors }) {
             </h3>
             <p className="text-slate-600 leading-relaxed text-base sm:text-lg mb-8">{intro.text}</p>
             <Link
-              href="/#contact"
+              href="/contact-us"
               className="inline-flex items-center px-8 py-3.5 rounded-full font-bold text-sm bg-[#ef4444] hover:bg-red-600 text-white shadow-[0_4px_14px_0_rgba(239,68,68,0.39)] transition-all hover:-translate-y-0.5"
             >
               Contact Us

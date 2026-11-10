@@ -33,7 +33,7 @@ export default function CurriculumCTA() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                href="/#contact"
+                href="/contact-us"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold border border-white/20 backdrop-blur-sm transition-all duration-200"
               >
                 <span>Book Campus Tour</span>

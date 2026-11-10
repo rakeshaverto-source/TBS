@@ -118,7 +118,7 @@ export default function CurriculumModules({ modules }) {
                   {/* CTA link */}
                   <div className="flex flex-wrap items-center gap-4">
                     <Link
-                      href="/#contact"
+                      href="/contact-us"
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#1e3a8a] hover:bg-blue-800 text-white font-semibold text-xs sm:text-sm transition-colors shadow-sm"
                     >
                       <PhoneCall className="w-4 h-4" />

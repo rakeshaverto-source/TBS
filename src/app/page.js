@@ -13,6 +13,15 @@ import TheTBSDifference from "@/components/TheTBSDifference";
 import TBSInNumbers from "@/components/TBSInNumbers";
 import CurriculumPillars from "@/components/CurriculumPillars";
 import BeyondPreview from "@/components/BeyondPreview";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Best CBSE Schools in Panchkula - The Bharat School",
+  description:
+    "Find the best CBSE schools in Panchkula for your child with modern facilities and a supportive environment. Enroll now for a transformative learning experience.",
+  path: "/",
+  image: "/logo.png",
+});
 
 export default function Home() {
   return (

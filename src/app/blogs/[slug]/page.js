@@ -14,9 +14,20 @@ export function generateStaticParams() {
   return DEFAULT_CONTENT.blogs.posts.map((p) => ({ slug: p.slug }));
 }
 
+// A few imported WordPress slugs contain percent-encoded emoji ("...-%f0%9f%8c%8c"),
+// while the URL param arrives decoded, so compare both in decoded form.
+function normalizeSlug(s) {
+  try {
+    return decodeURIComponent(s);
+  } catch {
+    return s;
+  }
+}
+
 async function findPost(slug) {
   const { posts } = await getSectionContent("blogs");
-  const index = posts.findIndex((p) => p.slug === slug);
+  const wanted = normalizeSlug(slug);
+  const index = posts.findIndex((p) => normalizeSlug(p.slug) === wanted);
   return index === -1 ? null : { post: posts[index], posts };
 }
 
