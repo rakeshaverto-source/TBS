@@ -7,7 +7,7 @@ import { ChevronRight, Calendar, ArrowRight, MessageCircle, Clock, ShieldCheck, 
 const ASSURANCES = [
   { icon: Clock, title: "Quick Response Time", text: "Prompt callback on any working day", color: "text-yellow-300" },
   { icon: ShieldCheck, title: "7-Day Offer Hold", text: "Zero pressure seat reservation", color: "text-white" },
-  { icon: Percent, title: "Transparent Fee Policy", text: "No hidden building funds or surprises", color: "text-emerald-300" },
+  { icon: Percent, title: "Transparent Fee Policy", text: "Clear, upfront fee structure", color: "text-emerald-300" },
 ];
 
 export default function AdmissionsHero() {
@@ -46,7 +46,7 @@ export default function AdmissionsHero() {
 
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs sm:text-sm font-semibold text-yellow-300 mb-6">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            Admissions Open • Academic Session 2026–27
+            Admissions Open • Academic Session 2027–28
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.02] mb-6">
@@ -79,7 +79,7 @@ export default function AdmissionsHero() {
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="https://wa.me/919876155746?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20Admissions%202026-27%20at%20The%20Bharat%20School."
+              href="https://wa.me/919876155746?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20Admissions%202027-28%20at%20The%20Bharat%20School."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-4 rounded-full font-bold text-sm bg-emerald-600 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-600/25 transition-all hover:-translate-y-0.5"
@@ -122,7 +122,7 @@ export default function AdmissionsHero() {
           className="lg:col-span-5 relative"
         >
           <div className="relative rotate-2 rounded-[2rem] overflow-hidden border-4 border-white/90 shadow-2xl shadow-black/50 aspect-[4/5] max-w-sm mx-auto">
-            <img src="/Primary classroom.webp" alt="Classroom at The Bharat School" className="w-full h-full object-cover" />
+            <img src="/admissions/hero.webp" alt="Students at The Bharat School" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           </div>
 

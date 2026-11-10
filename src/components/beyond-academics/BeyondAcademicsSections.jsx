@@ -126,20 +126,6 @@ export function BeyondHero({ hero, collage = [] }) {
               Academics
             </span>
           </h1>
-
-          <div className="flex flex-wrap gap-2.5">
-            {["Music", "Dance", "Science", "Field Trips", "Clubs", "Mindfulness"].map((tag, i) => (
-              <motion.span
-                key={tag}
-                initial={{ opacity: 0, scale: 0.6 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.4 + i * 0.08 }}
-                className="px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-white/10 border border-white/20 backdrop-blur-sm"
-              >
-                {tag}
-              </motion.span>
-            ))}
-          </div>
         </motion.div>
 
         {/* Polaroid Collage */}
@@ -178,13 +164,13 @@ export function BeyondHero({ hero, collage = [] }) {
   );
 }
 
-export function ActivityRibbon() {
-  const words = ["Music", "Dance", "Science Experiments", "Field Trips", "Club Activities", "Mindful Practices", "Art & Craft", "Stage Shows"];
+export function ActivityRibbon({ text }) {
+  const line = text || "Dance, music and drama are often woven together to promote aesthetic sensibilities amongst our young learners.";
   const row = (
     <span className="flex items-center shrink-0">
-      {words.map((w) => (
-        <span key={w} className="flex items-center gap-6 pr-6 text-lg sm:text-2xl font-black uppercase tracking-wide whitespace-nowrap">
-          {w}
+      {[0, 1].map((i) => (
+        <span key={i} className="flex items-center gap-6 pr-6 text-lg sm:text-2xl font-black tracking-wide whitespace-nowrap">
+          {line}
           <Star className="w-5 h-5 text-yellow-300 fill-yellow-300" />
         </span>
       ))}
@@ -227,28 +213,24 @@ export function BeyondClassrooms({ classrooms }) {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
                 whileHover={{ y: -8, rotate: index % 2 ? 1.5 : -1.5 }}
-                className="group relative flex flex-col justify-between min-h-44 sm:min-h-52 p-5 sm:p-7 rounded-3xl bg-white ring-1 ring-slate-200 shadow-lg overflow-hidden"
+                className={`group relative flex flex-col justify-end min-h-44 sm:min-h-64 p-5 sm:p-7 rounded-3xl overflow-hidden shadow-lg ${style.glow} ${
+                  item.image ? "bg-slate-900" : `bg-gradient-to-br ${style.bg}`
+                }`}
               >
-                {/* Hover Fill */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${style.bg} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-                <span className="absolute -right-2 -top-4 text-7xl sm:text-8xl font-black text-slate-100 group-hover:text-white/15 transition-colors duration-500 select-none">
-                  0{index + 1}
-                </span>
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                ) : (
+                  <Icon className="absolute -right-4 -top-4 w-32 h-32 text-white/15" />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className={`absolute inset-0 bg-gradient-to-br ${style.bg} opacity-0 group-hover:opacity-40 transition-opacity duration-500`} />
 
-                <div
-                  className={`relative w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br ${style.bg} shadow-lg ${style.glow} flex items-center justify-center group-hover:bg-none group-hover:bg-white/20 transition-all duration-500`}
-                >
-                  <Icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
-                </div>
-
-                <div className="relative flex items-end justify-between gap-2 mt-6">
-                  <span className="text-base sm:text-xl font-black text-slate-900 capitalize leading-tight group-hover:text-white transition-colors duration-500">
-                    {item.name}
-                  </span>
-                  <span className="shrink-0 w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-white transition-colors duration-500">
-                    <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-slate-900" />
-                  </span>
-                </div>
+                <span className="relative text-lg sm:text-2xl font-black text-white capitalize leading-tight drop-shadow">{item.name}</span>
               </motion.a>
             );
           })}
@@ -259,7 +241,6 @@ export function BeyondClassrooms({ classrooms }) {
 }
 
 export function CoCurricular({ data }) {
-  const pursuits = ["Best out of waste", "Origami", "Painting", "Rangoli Making", "Projects", "Debates"];
   return (
     <section id="co-curricular" className="relative py-20 sm:py-28 bg-[#0a1530] text-white overflow-hidden">
       <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#1e3a8a]/60 blur-3xl pointer-events-none" />
@@ -273,30 +254,19 @@ export function CoCurricular({ data }) {
         <motion.div {...reveal}>
           <SectionEyebrow light>Creative Pursuits</SectionEyebrow>
           <h3 className="text-3xl sm:text-5xl font-black tracking-tight mb-6 capitalize">{data.title}</h3>
-          <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">{data.text}</p>
-          <div className="flex flex-wrap gap-2.5">
-            {pursuits.map((p) => (
-              <span
-                key={p}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/5 border border-white/15 text-sm font-semibold hover:bg-yellow-400 hover:text-[#0a1530] hover:border-yellow-400 transition-colors cursor-default"
-              >
-                <Palette className="w-3.5 h-3.5" />
-                {p}
-              </span>
-            ))}
-          </div>
+          <p className="text-base sm:text-lg text-slate-300 leading-relaxed">{data.text}</p>
         </motion.div>
 
         {/* Scattered Polaroids */}
         <motion.div {...reveal} className="relative h-[420px] sm:h-[500px]">
           <div className="absolute top-0 left-0 w-[62%] h-[46%]">
-            <Polaroid src={data.images[0]} alt="Chess" caption="Strategy" rotate={-6} className="relative w-full h-full hover:rotate-0 transition-transform" />
+            <Polaroid src={data.images[0]} alt="Carrom" caption="Strategy" rotate={-6} className="relative w-full h-full hover:rotate-0 transition-transform" />
           </div>
           <div className="absolute top-[18%] right-0 w-[55%] h-[44%]">
             <Polaroid src={data.images[1]} alt="Painting" caption="Creativity" rotate={7} className="relative w-full h-full" />
           </div>
           <div className="absolute bottom-0 left-[8%] w-[70%] h-[46%]">
-            <Polaroid src={data.images[2]} alt="Basketball" caption="Teamwork" rotate={-3} className="relative w-full h-full" />
+            <Polaroid src={data.images[2]} alt="Students together" caption="Teamwork" rotate={-3} className="relative w-full h-full" />
           </div>
         </motion.div>
       </div>
@@ -305,7 +275,6 @@ export function CoCurricular({ data }) {
 }
 
 export function SocialAwareness({ data }) {
-  const tags = ["Diwali", "Christmas", "Old Age Homes", "Bal Sadan", "Ashiana"];
   const hearts = [
     { left: "8%", delay: 0, size: "w-5 h-5" },
     { left: "30%", delay: 1.5, size: "w-4 h-4" },
@@ -356,15 +325,7 @@ export function SocialAwareness({ data }) {
         <motion.div {...reveal}>
           <SectionEyebrow>Kindness In Action</SectionEyebrow>
           <h3 className="text-3xl sm:text-5xl font-black text-[#1e3a8a] tracking-tight mb-6 capitalize">{data.title}</h3>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-8">{data.text}</p>
-          <div className="flex flex-wrap gap-2.5">
-            {tags.map((t) => (
-              <span key={t} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-rose-100/70 text-[#c81e1e] text-sm font-semibold">
-                <Heart className="w-3.5 h-3.5 fill-current" />
-                {t}
-              </span>
-            ))}
-          </div>
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed">{data.text}</p>
         </motion.div>
       </div>
     </section>
@@ -456,13 +417,6 @@ export function FieldTrips({ data }) {
               </p>
             ))}
           </div>
-          <div className="flex flex-wrap gap-3 mb-8">
-            {["Self-reliance", "Discipline", "Responsibility", "Critical Thinking"].map((q) => (
-              <span key={q} className="px-4 py-2 rounded-xl bg-blue-50 text-[#1e3a8a] text-sm font-bold border border-blue-100">
-                {q}
-              </span>
-            ))}
-          </div>
           <ContactButton />
         </motion.div>
 
@@ -488,7 +442,10 @@ export function FieldTrips({ data }) {
 export function MagicalMoments({ data }) {
   const [openIndex, setOpenIndex] = useState(null);
   const total = data.images.length;
-  const layout = ["md:col-span-2", "md:col-span-4", "md:col-span-2", "md:col-span-2", "md:col-span-2", "col-span-2 md:col-span-6"];
+  const layout =
+    total === 7
+      ? ["md:col-span-2", "md:col-span-4", "md:col-span-2", "md:col-span-2", "md:col-span-2", "md:col-span-3", "col-span-2 md:col-span-3"]
+      : ["md:col-span-2", "md:col-span-4", "md:col-span-2", "md:col-span-2", "md:col-span-2", "col-span-2 md:col-span-6"];
 
   useEffect(() => {
     if (openIndex === null) return;

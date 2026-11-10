@@ -9,6 +9,7 @@ const STATUS_STYLES = {
   Limited: { pill: "bg-amber-100 text-amber-800", icon: Zap, glow: "rgba(245,158,11,0.35)", chair: "text-amber-500" },
   Open: { pill: "bg-emerald-100 text-emerald-700", icon: CircleDot, glow: "rgba(16,185,129,0.35)", chair: "text-emerald-500" },
   "Merit Interview": { pill: "bg-violet-100 text-violet-700", icon: Award, glow: "rgba(139,92,246,0.35)", chair: "text-violet-500" },
+  Full: { pill: "bg-slate-200 text-slate-700", icon: Lock, glow: "rgba(148,163,184,0.3)", chair: "text-slate-400" },
 };
 const DEFAULT_STYLE = { pill: "bg-slate-100 text-slate-700", icon: CircleDot, glow: "rgba(59,130,246,0.35)", chair: "text-[#1e3a8a]" };
 
@@ -167,7 +168,7 @@ export default function AdmissionsSeats({ seats }) {
               <span className="w-8 sm:w-12 h-0.5 bg-gradient-to-r from-transparent to-yellow-400"></span>
               Real-Time Availability
             </h2>
-            <h3 className="text-3xl sm:text-5xl font-black tracking-tight mb-6">Current Seat Status (2026–27)</h3>
+            <h3 className="text-3xl sm:text-5xl font-black tracking-tight mb-6">Current Seat Status (2027–28)</h3>
 
             {/* Campus Filter */}
             <div className="inline-flex flex-wrap gap-1 p-1 rounded-full bg-white/5 border border-white/10">

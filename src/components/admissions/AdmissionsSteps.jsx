@@ -73,10 +73,7 @@ export default function AdmissionsSteps({ steps }) {
             Step-by-Step Roadmap
             <span className="w-8 sm:w-12 h-0.5 bg-gradient-to-l from-transparent to-[#e1251b]"></span>
           </h2>
-          <h3 className="text-3xl sm:text-5xl font-black text-[#1e3a8a] tracking-tight mb-4">How Admission Works at TBS</h3>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            No endless queues or bureaucratic confusion. Five clearly defined milestones from your first question to day one.
-          </p>
+          <h3 className="text-3xl sm:text-5xl font-black text-[#1e3a8a] tracking-tight">How Admission Works at TBS</h3>
         </motion.div>
 
         <div onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, animate } from "framer-motion";
-import { CheckCircle2, Percent, ArrowRight, XCircle, ShieldCheck } from "lucide-react";
+import { CheckCircle2, Percent, ArrowRight } from "lucide-react";
 import { useContent } from "@/lib/content/store";
 import { getIcon } from "@/lib/icons";
 
@@ -25,7 +25,7 @@ function CountUp({ value }) {
 }
 
 export default function AdmissionsFees() {
-  const { plans: PLANS, notCharged: NOT_CHARGED, concessions: CONCESSIONS } = useContent("admissions").fees;
+  const { plans: PLANS, concessions: CONCESSIONS } = useContent("admissions").fees;
   return (
     <section id="fees" className="relative py-20 sm:py-28 bg-white overflow-hidden">
       <div className="absolute top-32 -left-24 w-80 h-80 rounded-full bg-amber-100/50 blur-3xl pointer-events-none" />
@@ -33,20 +33,19 @@ export default function AdmissionsFees() {
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16">
+        <div className="mb-16">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-7"
           >
             <h2 className="text-[#e1251b] font-bold tracking-[0.25em] uppercase text-xs sm:text-sm mb-3 flex items-center gap-4">
               <span className="w-8 sm:w-12 h-0.5 bg-gradient-to-r from-transparent to-[#e1251b]"></span>
               Transparent Tuition
             </h2>
             <h3 className="text-5xl sm:text-7xl font-black text-[#1e3a8a] tracking-tight mb-4">Fees</h3>
-            <p className="text-2xl sm:text-3xl font-black text-slate-900 leading-tight mb-4">
+            <p className="text-2xl sm:text-3xl font-black text-slate-900 leading-tight">
               A clear number,{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">held for everyone.</span>
@@ -59,63 +58,6 @@ export default function AdmissionsFees() {
                 />
               </span>
             </p>
-            <p className="text-base sm:text-lg text-slate-500 max-w-xl">
-              No unexpected building funds, re-admission charges, or mid-term escalation. What you see is what you pay.
-            </p>
-          </motion.div>
-
-          {/* What You Won't Pay */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="lg:col-span-5 relative"
-          >
-            <div className="relative rounded-[2rem] bg-[#0a1530] text-white p-7 sm:p-8 shadow-2xl shadow-blue-900/20 overflow-hidden">
-              <div className="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-[#e1251b]/30 blur-3xl pointer-events-none" />
-              <div className="relative text-xs font-black uppercase tracking-[0.2em] text-yellow-400 mb-5">What you won&apos;t pay</div>
-              <ul className="relative space-y-4">
-                {NOT_CHARGED.map((item, i) => (
-                  <li key={item} className="flex items-center gap-3">
-                    <motion.span
-                      initial={{ scale: 0, rotate: -90 }}
-                      whileInView={{ scale: 1, rotate: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.4 + i * 0.3, type: "spring", stiffness: 260 }}
-                    >
-                      <XCircle className="w-6 h-6 text-[#ef4444]" />
-                    </motion.span>
-                    <span className="relative text-lg font-bold text-slate-300">
-                      {item}
-                      <motion.span
-                        initial={{ scaleX: 0 }}
-                        whileInView={{ scaleX: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.5 + i * 0.3, duration: 0.4 }}
-                        className="absolute left-0 top-1/2 w-full h-0.5 bg-[#ef4444] origin-left"
-                      />
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Stamp */}
-            <motion.div
-              initial={{ scale: 2, opacity: 0, rotate: -30 }}
-              whileInView={{ scale: 1, opacity: 1, rotate: -12 }}
-              viewport={{ once: true }}
-              transition={{ delay: 1.5, type: "spring", stiffness: 200, damping: 12 }}
-              className="absolute -bottom-6 -right-2 sm:-right-6 px-4 py-2.5 rounded-xl border-[3px] border-emerald-500 bg-white text-emerald-600 shadow-xl flex items-center gap-2"
-            >
-              <ShieldCheck className="w-5 h-5" />
-              <span className="text-xs sm:text-sm font-black uppercase tracking-wide leading-tight">
-                What you see is
-                <br />
-                what you pay
-              </span>
-            </motion.div>
           </motion.div>
         </div>
 
@@ -150,7 +92,7 @@ export default function AdmissionsFees() {
                   <div className="relative mt-6 pt-5 border-t border-white/20 flex items-end justify-between gap-4">
                     <div>
                       <span className="text-xs text-white/75 block mb-1">{plan.price.label}</span>
-                      <span className="text-4xl sm:text-5xl font-black tracking-tight tabular-nums">
+                      <span className="text-2xl sm:text-3xl font-black tracking-tight tabular-nums">
                         <CountUp value={plan.price.amount} />
                       </span>
                       <span className="text-sm text-white/80"> / month</span>
@@ -239,8 +181,7 @@ export default function AdmissionsFees() {
                   <span className={`w-12 h-12 rounded-xl bg-gradient-to-br ${c.color} flex items-center justify-center mb-4 shadow-md`}>
                     <Icon className="w-6 h-6 text-white" />
                   </span>
-                  <h5 className="text-base font-black text-slate-900 capitalize mb-1">{c.title}</h5>
-                  <p className="text-sm text-slate-600 leading-relaxed">{c.text}</p>
+                  <h5 className="text-base font-black text-slate-900 capitalize">{c.title}</h5>
                 </motion.div>
               );
             })}

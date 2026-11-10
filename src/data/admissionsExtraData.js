@@ -7,7 +7,7 @@ export const CAMPUSES = [
 ];
 
 export const GRADES = [
-  { value: "Kindergarten", label: "Kindergarten / Pre-K" },
+  { value: "Kindergarten", label: "Kindergarten / Playway" },
   { value: "Class I", label: "Class I" },
   { value: "Class II - V", label: "Class II – V" },
   { value: "Class VI - VIII", label: "Class VI – VIII" },
@@ -30,7 +30,7 @@ export const TOUR_HIGHLIGHTS = [
 // from components/admissions/AdmissionsFees.jsx
 export const PLANS = [
   {
-    badge: "Pre-K to Kindergarten",
+    badge: "Playway to Kindergarten",
     campus: "Tinkerbelle Wing",
     title: "Early Years Tuition",
     text: "All-inclusive foundational early childhood pedagogy, sensory play, smart rooms, and student safety systems.",
@@ -41,7 +41,7 @@ export const PLANS = [
     price: { label: "Playgroup – KG Monthly Fee", amount: 7500, tag: "All-Inclusive" },
     rows: [
       { label: "Registration & Admission", value: "One-Time Only", tag: "Transparent" },
-      { label: "GPS-Tracked Cab Facility", value: "₹2,800 – ₹3,200 / month", tag: "Optional", icon: "Bus" },
+      { label: "GPS Tracked Transport", value: "₹2,800 – ₹3,200 / month", tag: "Optional", icon: "Bus" },
     ],
     footer: "Zero hidden developmental charges",
     link: "Tour Tinkerbelle",

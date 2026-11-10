@@ -53,7 +53,7 @@ export default function AdmissionsCTA() {
             <div className="lg:col-span-5 relative">
               <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-3xl bg-yellow-300/80" />
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border-4 border-white shadow-2xl -rotate-2 hover:rotate-0 transition-transform duration-500">
-                <img src="/Primary classroom.webp" alt="Classroom Atmosphere" className="w-full h-full object-cover" />
+                <img src="/admissions/classroom.webp" alt="Students in a corridor at The Bharat School" className="w-full h-full object-cover object-[center_30%]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
                   <div>
                     <div className="text-xs font-bold text-yellow-400 uppercase tracking-wider mb-1">Real Photos • Real Classrooms</div>

@@ -163,7 +163,7 @@ export default function AdmissionsTourForm({
                 >
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-6 bg-yellow-200/80 rotate-[-4deg]" />
                   <div className="aspect-[4/3] overflow-hidden rounded-sm">
-                    <img src="/Primary classroom.webp" alt="Classroom at The Bharat School" className="w-full h-full object-cover" />
+                    <img src="/admissions/campus-tour.webp" alt="Campus of The Bharat School" className="w-full h-full object-cover" />
                   </div>
                   <p className="absolute bottom-2.5 left-0 right-0 text-center font-serif italic text-slate-700">See you on campus!</p>
                 </motion.div>
@@ -345,7 +345,7 @@ export default function AdmissionsTourForm({
                   {/* 3. Grade */}
                   <div>
                     <SectionLabel number={3} done={!!selectedGrade}>
-                      Grade of Interest *
+                      Class of Interest *
                     </SectionLabel>
                     <div className="flex flex-wrap gap-2.5">
                       {GRADES.map((g) => {

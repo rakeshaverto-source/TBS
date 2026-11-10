@@ -20,7 +20,7 @@ export default function BeyondAcademicsPage() {
       <BeyondHero hero={beyondAcademicsData.hero} collage={beyondAcademicsData.hero.collage} />
 
       {/* Scrolling Activity Ribbon */}
-      <ActivityRibbon />
+      <ActivityRibbon text={beyondAcademicsData.ribbonText} />
 
       {/* 2. Beyond The Classrooms */}
       <BeyondClassrooms classrooms={beyondAcademicsData.classrooms} />
