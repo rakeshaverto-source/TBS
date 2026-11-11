@@ -5,7 +5,7 @@ export default function VisionMission({ vision, mission }) {
     <section id="vision-mission">
       {/* Vision */}
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative min-h-[280px] lg:min-h-[420px]">
+        <div className="relative aspect-[3/2]">
           <img src={vision.image} alt="Our Vision" className="absolute inset-0 w-full h-full object-cover" />
         </div>
         <div className="bg-[#e1251b] text-white flex items-center px-6 sm:px-12 lg:px-16 py-14">
