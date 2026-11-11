@@ -5,8 +5,9 @@ export default function VisionMission({ vision, mission }) {
     <section id="vision-mission">
       {/* Vision */}
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative aspect-[3/2]">
-          <img src={vision.image} alt="Our Vision" className="absolute inset-0 w-full h-full object-cover" />
+        {/* Natural height so the whole photo always shows; red fill covers any gap when the text runs taller */}
+        <div className="bg-[#e1251b] flex items-center">
+          <img src={vision.image} alt="Our Vision" className="block w-full h-auto" />
         </div>
         <div className="bg-[#e1251b] text-white flex items-center px-6 sm:px-12 lg:px-16 py-14">
           <div className="w-full max-w-xl mx-auto">
