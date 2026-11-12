@@ -9,7 +9,7 @@ export default function TBSJourney() {
   const containerRef = useRef(null);
 
   return (
-    <section 
+    <section
       ref={containerRef}
       className="relative py-20 lg:py-28 overflow-hidden select-none border-y border-[#E8ECEF]"
       style={{
@@ -17,8 +17,8 @@ export default function TBSJourney() {
       }}
     >
       {/* 1. Subtle Dot Matrix Pattern */}
-      <div 
-        className="absolute inset-0 pointer-events-none opacity-[0.035] bg-[radial-gradient(#1e3a8a_1.5px,transparent_1.5px)] [background-size:26px_26px]" 
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.035] bg-[radial-gradient(#1e3a8a_1.5px,transparent_1.5px)] [background-size:26px_26px]"
       />
 
       {/* 2. Soft Ambient Lighting */}
@@ -41,19 +41,19 @@ export default function TBSJourney() {
       </div>
 
       <div className="max-w-[1520px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
-        
+
         {/* ============================================================== */}
         {/* CONTINUOUS STORY SCENE CONTAINER */}
         {/* ============================================================== */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
-          
+
           {/* ------------------------------------------------------------ */}
           {/* LEFT STORY INTRO (lg:col-span-3) */}
           {/* ------------------------------------------------------------ */}
           <div className="lg:col-span-3 pt-4 flex flex-col justify-between">
             <div>
               {/* Pill Tag */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -114,10 +114,10 @@ export default function TBSJourney() {
 
             {/* Sinuous Connecting Wave Highway */}
             <div className="absolute top-[175px] left-0 right-0 h-[100px] hidden md:block pointer-events-none z-0">
-              <svg 
-                viewBox="0 0 1000 120" 
-                fill="none" 
-                className="w-full h-full" 
+              <svg
+                viewBox="0 0 1000 120"
+                fill="none"
+                className="w-full h-full"
                 preserveAspectRatio="none"
               >
                 <path
@@ -150,7 +150,7 @@ export default function TBSJourney() {
               {/* ======================================================== */}
               {/* STAGE 1: TINKERBELL PRESCHOOL (Tinkkerbell.png) */}
               {/* ======================================================== */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -159,7 +159,7 @@ export default function TBSJourney() {
               >
                 {/* Top Image Composition with Circular Frame & Cutout */}
                 <div className="relative w-64 h-64 mb-3 flex items-center justify-center">
-                  
+
                   {/* Circular Backdrop Aura */}
                   <div className="absolute inset-3 rounded-full bg-gradient-to-tr from-[#FFF1EB] via-[#FDE5DC] to-[#FCD9CF] border-2 border-white shadow-[0_20px_45px_-12px_rgba(239,68,68,0.25)] -z-0 group-hover:scale-105 transition-transform duration-500" />
 
@@ -221,7 +221,7 @@ export default function TBSJourney() {
               {/* ======================================================== */}
               {/* STAGE 2: THE BHARAT SCHOOL (Thebhart.png) */}
               {/* ======================================================== */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -230,7 +230,7 @@ export default function TBSJourney() {
               >
                 {/* Top Image Composition with Arch Backdrop */}
                 <div className="relative w-64 h-64 mb-3 flex items-center justify-center">
-                  
+
                   {/* Arched Backdrop Aura */}
                   <div className="absolute inset-x-5 top-2 bottom-3 rounded-[110px_110px_45px_45px] bg-gradient-to-tr from-[#EBF3FF] via-[#E1ECFD] to-[#D5E5FD] border-2 border-white shadow-[0_22px_50px_-12px_rgba(30,58,138,0.28)] -z-0 group-hover:scale-105 transition-transform duration-500" />
 
@@ -298,7 +298,7 @@ export default function TBSJourney() {
               {/* ======================================================== */}
               {/* STAGE 3: TBS ALUMNI (TBS Alumni.png) */}
               {/* ======================================================== */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -313,7 +313,7 @@ export default function TBSJourney() {
                   {/* Graduate Cutout Image (TBS Alumni.png) */}
                   <div className="relative w-56 h-60 z-10 transition-transform duration-500 group-hover:scale-105 group-hover:-translate-y-2 flex items-end justify-center">
                     <Image
-                      src="/TBS%20Alumni.png"
+                      src="/TBSAlumniMen.png"
                       alt="TBS Alumni Graduate"
                       fill
                       priority

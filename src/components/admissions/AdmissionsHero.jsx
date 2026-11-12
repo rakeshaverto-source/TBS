@@ -121,7 +121,7 @@ export default function AdmissionsHero() {
           transition={{ duration: 0.9, delay: 0.2 }}
           className="lg:col-span-5 relative"
         >
-          <div className="relative rotate-2 rounded-[2rem] overflow-hidden border-4 border-white/90 shadow-2xl shadow-black/50 aspect-[4/5] max-w-sm mx-auto">
+          <div className="relative rotate-2 rounded-[2rem] overflow-hidden border-4 border-white/90 shadow-2xl shadow-black/50 aspect-[3/2] max-w-lg mx-auto">
             <img src="/admissions/hero.webp" alt="Students at The Bharat School" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           </div>

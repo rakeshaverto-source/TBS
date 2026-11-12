@@ -52,14 +52,14 @@ export default function WhyChooseUs() {
             {/* Soft blurred fill for the empty space */}
             <div
               className="absolute inset-0 bg-cover bg-center scale-110 blur-xl opacity-90"
-              style={{ backgroundImage: "url('/Why.jpeg')" }}
+              style={{ backgroundImage: "url('/WHY%20CHOOSE%20TBS.png')" }}
               aria-hidden="true"
             ></div>
             <div className="absolute inset-0 bg-white/20" aria-hidden="true"></div>
 
             {/* Full image - not cropped, vertically centred */}
             <img
-              src="/Why.jpeg"
+              src="/WHY%20CHOOSE%20TBS.png"
               alt="Students of The Bharat School"
               className="relative w-full h-auto shadow-xl"
             />
