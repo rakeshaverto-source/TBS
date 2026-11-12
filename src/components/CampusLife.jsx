@@ -106,11 +106,16 @@ export default function CampusLife() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="rounded-3xl relative overflow-hidden group shadow-lg"
             >
-              {/* Actual Image Background */}
-              <img 
-                src="/cultural day.avif" 
-                alt="Assembly / cultural day" 
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+              {/* Blurred fill so the full (zoomed-out) photo has no empty bars */}
+              <div
+                className="absolute inset-0 bg-cover bg-center scale-125 blur-xl"
+                style={{ backgroundImage: "url('/assembly-cultural-day.webp')" }}
+                aria-hidden="true"
+              />
+              <img
+                src="/assembly-cultural-day.webp"
+                alt="Assembly / cultural day"
+                className="absolute inset-0 w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
@@ -130,7 +135,7 @@ export default function CampusLife() {
             >
               {/* Actual Image Background */}
               <img 
-                src="/Sports.webp" 
+                src="/sports-ground-activity.webp" 
                 alt="Sports ground activity" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
               />
