@@ -30,37 +30,17 @@ export const TOUR_HIGHLIGHTS = [
 // from components/admissions/AdmissionsFees.jsx
 export const PLANS = [
   {
-    badge: "Playway to Kindergarten",
-    campus: "Tinkerbelle Wing",
-    title: "Early Years Tuition",
-    text: "All-inclusive foundational early childhood pedagogy, sensory play, smart rooms, and student safety systems.",
-    icon: "Baby",
-    header: "from-amber-500 to-orange-500",
-    glow: "group-hover:shadow-amber-500/25",
-    accent: "text-amber-600",
-    price: { label: "Playgroup – KG Monthly Fee", amount: 7500, tag: "All-Inclusive" },
-    rows: [
-      { label: "Registration & Admission", value: "One-Time Only", tag: "Transparent" },
-      { label: "GPS Tracked Transport", value: "₹2,800 – ₹3,200 / month", tag: "Optional", icon: "Bus" },
-    ],
-    footer: "Zero hidden developmental charges",
-    link: "Tour Tinkerbelle",
-  },
-  {
     badge: "Class I to Class XII",
     campus: "Sector 12 Campus",
-    title: "CBSE Formal Schooling",
-    text: "Comprehensive academic instruction, modern science & computer labs, sports coaching, and career guidance.",
+    title: "The Bharat School",
     icon: "School",
     header: "from-[#1e3a8a] to-[#3b82f6]",
     glow: "group-hover:shadow-blue-600/25",
     accent: "text-[#1e3a8a]",
-    price: { label: "Grades I–VII Tuition", amount: 9000, tag: "Primary" },
+    price: { label: "Fee", amount: 9000, suffix: "onwards" },
     rows: [
-      { label: "Grades VIII–X Tuition", value: "₹10,500 / month", tag: "Secondary" },
-      { label: "GPS-Tracked Transport", value: "₹3,500 – ₹3,900 / month", tag: "Optional", icon: "Bus" },
+      { label: "Transport Fee", value: "₹3,600 onwards", icon: "Bus" },
     ],
-    footer: "Includes Olympiad training and smart labs",
     link: "Tour Sector 12",
   },
 ];

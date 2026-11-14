@@ -1,7 +1,7 @@
 export const aboutData = {
   intro: {
     title: "About Our School",
-    image: "/The Bhart.jpeg",
+    image: "/about-school.webp",
     text: "The establishment of this esteemed institution was initiated with a profound sense of compassion and a dedicated mission to influence the trajectory of the nation's future through the provision of exemplary resources and effective learning programs. The Bharat School is committed to the implementation of conscientious learning methodologies, thereby contributing to the refinement of the educational landscape and fostering superior outcomes.",
   },
 
@@ -107,12 +107,12 @@ export const aboutData = {
   ],
 
   vision: {
-    image: "/Why.jpeg",
+    image: "/about-vision.webp",
     text: "To cultivate innovative thinkers and confident individuals, The Bharat School envisions a nurturing educational sanctuary where young minds are inspired to explore, create, and excel. Guided by unwavering dedication, we aspire to empower future leaders with the knowledge, skills, and moral compass to thrive in a diverse global society.",
   },
 
   mission: {
-    image: "/Sports.webp",
+    image: "/about-mission.webp",
     text: "At The Bharat School, we are committed to providing a transformative educational experience. Our mission is to deliver a holistic curriculum, fostering intellectual curiosity, creativity, and character development. Through compassionate teaching, state-of-the-art resources, and a focus on individual growth, we aim to instill a lifelong love for learning, equipping our students to navigate the complexities of the world with confidence and integrity.",
   },
 };

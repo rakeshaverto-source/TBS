@@ -181,7 +181,7 @@ export const statsData = [
       countColor: 'text-[#1e3a8a]',
       link: '#students'
     },
-    bottom: { type: 'image', bgUrl: '/numbers-legacy.webp' }
+    bottom: { type: 'image', bgUrl: '/numbers-inauguration.webp' }
   },
   {
     id: 3,
@@ -210,11 +210,11 @@ export const statsData = [
       textColor: 'text-slate-800',
       countColor: 'text-[#1e3a8a]',
     },
-    bottom: { type: 'image', bgUrl: '/Smart classroom.png' }
+    bottom: { type: 'image', bgUrl: '/campus-hero.png' }
   },
   {
     id: 5,
-    top: { type: 'image', bgUrl: '/campus-hero.png' },
+    top: { type: 'image', bgUrl: '/numbers-alumni-network.webp' },
     bottom: { 
       type: 'content', 
       countNum: 50,
@@ -237,7 +237,7 @@ export const statsData = [
       textColor: 'text-slate-800',
       countColor: 'text-[#1e3a8a]',
     },
-    bottom: { type: 'image', bgUrl: '/numbers-leadership.webp' }
+    bottom: { type: 'image', bgUrl: '/numbers-leadership-award.webp' }
   }
 ];
 
@@ -264,7 +264,7 @@ export const TABS = [
     title: 'Wellbeing',
     heading: 'Wellbeing',
     desc: 'The physical and mental health of our students is paramount. We provide a supportive environment with comprehensive counseling, mindfulness programs, and physical activities.',
-    image: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/wellbeing.webp',
     linkText: 'Learn more about Wellbeing'
   },
   {
@@ -272,7 +272,7 @@ export const TABS = [
     title: 'Student Experience',
     heading: 'Student Experience',
     desc: 'Beyond academics, we offer a rich tapestry of extracurricular activities, clubs, and events that make school life vibrant, engaging, and memorable for every student.',
-    image: '/cultural day.avif',
+    image: '/student-experience-centered.webp',
     linkText: 'Learn more about Student Experience'
   },
   {

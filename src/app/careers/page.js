@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Briefcase,
@@ -15,7 +14,6 @@ import {
   CheckCircle2,
   MapPin,
   Clock,
-  Calendar,
   Building2,
   Send,
   Phone,
@@ -72,7 +70,7 @@ export default function CareersPage() {
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-semibold text-yellow-300 mb-6">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            Academic & Administrative Recruitment 2026–27
+            Academic & Administrative Recruitment 2027–28
           </div>
 
           {/* Main Headline */}
@@ -301,69 +299,6 @@ export default function CareersPage() {
           <p className="text-xs sm:text-sm text-slate-500 max-w-md mx-auto">
             Attach your updated CV and include the position you are applying for in the subject line.
           </p>
-        </div>
-      </section>
-
-      {/* ================= COME SEE THE CLASSROOM BEFORE YOU DECIDE ================= */}
-      <section id="visit" className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl p-8 sm:p-12 lg:p-14 border border-slate-200/90 shadow-xl">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-              {/* Left text */}
-              <div className="lg:col-span-7 space-y-6">
-                <span className="text-xs font-bold uppercase tracking-widest text-red-600 block">
-                  Campus Openness
-                </span>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-                  Come see the classroom before you decide.
-                </h2>
-                <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-                  We believe you should experience the warmth and energy of our school firsthand. Walk our hallways, see our smart classrooms, and talk to our teachers over tea.
-                </p>
-
-                <div className="pt-2 flex flex-wrap items-center gap-4">
-                  <Link
-                    href="/#tour"
-                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-bold text-sm bg-[#1e3a8a] hover:bg-blue-900 text-white transition-all shadow-md shadow-blue-900/15"
-                  >
-                    <Calendar className="w-4 h-4" />
-                    <span>Book a Tour</span>
-                  </Link>
-                  <a
-                    href="https://wa.me/919876155746?text=Hi%2C%20I%20would%20like%20to%20visit%20The%20Bharat%20School%20to%20see%20classrooms%20and%20discuss%20careers."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-bold text-sm bg-emerald-600 hover:bg-emerald-500 text-white transition-all shadow-md shadow-emerald-600/15"
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                    <span>WhatsApp Us</span>
-                  </a>
-                </div>
-              </div>
-
-              {/* Right Image */}
-              <div className="lg:col-span-5 relative">
-                <div className="relative w-full h-80 sm:h-95 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
-                  <Image
-                    src="/Primary classroom.webp"
-                    alt="The Bharat School Classrooms"
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
-                    <div className="text-white">
-                      <div className="text-xs font-bold text-yellow-400 uppercase tracking-wider mb-1">
-                        Classroom Environment
-                      </div>
-                      <div className="text-sm font-semibold text-slate-100">
-                        Air-conditioned comfort, smart interactive boards, and low student-teacher ratio.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

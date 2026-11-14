@@ -31,8 +31,14 @@ export default function VisionMission({ vision, mission }) {
             <p className="text-base sm:text-lg leading-relaxed text-white/95 text-justify hyphens-auto">{mission.text}</p>
           </div>
         </div>
-        <div className="order-1 lg:order-2 relative min-h-[280px] lg:min-h-[420px]">
-          <img src={mission.image} alt="Our Mission" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="order-1 lg:order-2 relative min-h-[360px] lg:min-h-[420px] overflow-hidden bg-[#1e3a8a]">
+          {/* Blurred fill so a portrait photo shows in full without empty bars */}
+          <div
+            className="absolute inset-0 bg-cover bg-center scale-125 blur-xl opacity-70"
+            style={{ backgroundImage: `url('${encodeURI(mission.image)}')` }}
+            aria-hidden="true"
+          />
+          <img src={mission.image} alt="Our Mission" className="absolute inset-0 w-full h-full object-contain" />
         </div>
       </div>
     </section>

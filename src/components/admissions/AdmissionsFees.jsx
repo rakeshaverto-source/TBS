@@ -62,7 +62,7 @@ export default function AdmissionsFees() {
         </div>
 
         {/* Plan Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className={`grid grid-cols-1 gap-8 mb-12 ${PLANS.length > 1 ? "md:grid-cols-2" : "max-w-xl mx-auto"}`}>
           {PLANS.map((plan, i) => {
             const Icon = getIcon(plan.icon);
             return (
@@ -87,7 +87,7 @@ export default function AdmissionsFees() {
                     <span className="text-xs font-semibold text-white/80">{plan.campus}</span>
                   </div>
                   <h4 className="relative text-2xl sm:text-3xl font-black mb-2">{plan.title}</h4>
-                  <p className="relative text-sm text-white/85 max-w-sm">{plan.text}</p>
+                  {plan.text && <p className="relative text-sm text-white/85 max-w-sm">{plan.text}</p>}
 
                   <div className="relative mt-6 pt-5 border-t border-white/20 flex items-end justify-between gap-4">
                     <div>
@@ -95,9 +95,9 @@ export default function AdmissionsFees() {
                       <span className="text-2xl sm:text-3xl font-black tracking-tight tabular-nums">
                         <CountUp value={plan.price.amount} />
                       </span>
-                      <span className="text-sm text-white/80"> / month</span>
+                      <span className="text-sm text-white/80"> {plan.price.suffix || "/ month"}</span>
                     </div>
-                    <span className="text-xs font-bold bg-white text-slate-900 px-3 py-1 rounded-full shrink-0">{plan.price.tag}</span>
+                    {plan.price.tag && <span className="text-xs font-bold bg-white text-slate-900 px-3 py-1 rounded-full shrink-0">{plan.price.tag}</span>}
                   </div>
                 </div>
 
@@ -120,17 +120,19 @@ export default function AdmissionsFees() {
                           <span className="text-xs text-slate-500 block">{row.label}</span>
                           <strong className="text-base font-bold text-slate-900">{row.value}</strong>
                         </div>
-                        <span className="text-[11px] font-bold text-slate-500 bg-white px-2.5 py-1 rounded-full ring-1 ring-slate-200 shrink-0">{row.tag}</span>
+                        {row.tag && <span className="text-[11px] font-bold text-slate-500 bg-white px-2.5 py-1 rounded-full ring-1 ring-slate-200 shrink-0">{row.tag}</span>}
                       </motion.div>
                     );
                   })}
                 </div>
 
                 <div className="px-7 sm:px-8 pb-7 sm:pb-8 flex items-center justify-between gap-4 text-xs text-slate-500">
-                  <span className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                    {plan.footer}
-                  </span>
+                  {plan.footer ? (
+                    <span className="flex items-center gap-1.5">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                      {plan.footer}
+                    </span>
+                  ) : <span />}
                   <a href="#book-tour" className={`inline-flex items-center gap-1 font-bold ${plan.accent} hover:underline shrink-0`}>
                     {plan.link}
                     <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />

@@ -62,12 +62,12 @@ export default function CampusLife() {
             />
             
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent group-hover:from-black/70 transition-colors duration-300"></div>
             
             {/* Content */}
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
-              <h3 className="text-white text-2xl md:text-3xl font-bold tracking-tight drop-shadow-md transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                Primary classroom, real photo
+              <h3 className="text-white text-2xl md:text-3xl font-bold tracking-tight drop-shadow-md">
+                Inside a classroom
               </h3>
             </div>
             
@@ -90,10 +90,10 @@ export default function CampusLife() {
                 alt="Smart Classroom" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
               />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent group-hover:from-black/70 transition-colors duration-300"></div>
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                <h3 className="text-white text-lg md:text-xl font-bold drop-shadow-md transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                  Smart classroom in use
+                <h3 className="text-white text-lg md:text-xl font-bold drop-shadow-md">
+                  Smart Class, Smart Us
                 </h3>
               </div>
             </motion.div>
@@ -114,13 +114,13 @@ export default function CampusLife() {
               />
               <img
                 src="/assembly-cultural-day.webp"
-                alt="Assembly / cultural day"
+                alt="Three students with their books"
                 className="absolute inset-0 w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent group-hover:from-black/70 transition-colors duration-300"></div>
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                <h3 className="text-white text-lg md:text-xl font-bold drop-shadow-md transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                  Assembly / cultural day
+                <h3 className="text-white text-lg md:text-xl font-bold drop-shadow-md">
+                  Books &amp; Beyond
                 </h3>
               </div>
             </motion.div>
@@ -139,10 +139,10 @@ export default function CampusLife() {
                 alt="Sports ground activity" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
               />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent group-hover:from-black/70 transition-colors duration-300"></div>
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                <h3 className="text-white text-lg md:text-xl font-bold drop-shadow-md transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                  Sports ground activity
+                <h3 className="text-white text-lg md:text-xl font-bold drop-shadow-md">
+                  Fitness Check
                 </h3>
               </div>
             </motion.div>
@@ -161,10 +161,10 @@ export default function CampusLife() {
                 alt="Transport / GPS bus" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
               />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent group-hover:from-black/70 transition-colors duration-300"></div>
               <div className="absolute inset-0 p-6 flex flex-col justify-end z-10">
-                <h3 className="text-white text-lg md:text-xl font-bold drop-shadow-md transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                  Transport / GPS bus
+                <h3 className="text-white text-lg md:text-xl font-bold drop-shadow-md">
+                  School Transport
                 </h3>
               </div>
             </motion.div>

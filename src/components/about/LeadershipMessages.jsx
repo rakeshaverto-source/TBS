@@ -20,17 +20,9 @@ const THUMB_POSITION = {
   "/About/Ms. Geetika Sethi.webp": "left top",
 };
 
-// In the large spotlight photo the same two images are zoomed in slightly,
-// anchored near the left edge, so the person sits in the centre of the frame.
-const MAIN_FRAMING = {
-  "/About/Mr. Sanjay Sethi.webp": { transform: "scale(1.3)", transformOrigin: "5% 0%" },
-  "/About/Ms. Geetika Sethi.webp": { transform: "scale(1.3)", transformOrigin: "5% 0%" },
-};
-
 function LeaderPhoto({ item, className = "", centerFace = false }) {
-  const style = centerFace
-    ? THUMB_POSITION[item.image] && { objectPosition: THUMB_POSITION[item.image] }
-    : MAIN_FRAMING[item.image];
+  // The large photo always shows in full (its frame matches the 4:3 photos)
+  const style = centerFace && THUMB_POSITION[item.image] && { objectPosition: THUMB_POSITION[item.image] };
   return item.image ? (
     <img
       src={encodeURI(item.image)}
@@ -139,11 +131,7 @@ export default function LeadershipMessages({ messages }) {
                 </h4>
                 <p className="text-base sm:text-lg text-slate-600 leading-relaxed">{current.message}</p>
 
-                <div className="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between gap-4">
-                  <div>
-                    <p className="font-serif italic text-xl sm:text-2xl text-slate-800">{current.name}</p>
-                    <p className="text-xs text-slate-500 mt-0.5">The Bharat School, Panchkula</p>
-                  </div>
+                <div className="mt-8 pt-6 border-t border-slate-100 flex items-center justify-end gap-4">
                   <div className="flex items-center gap-2 shrink-0">
                     <button
                       type="button"

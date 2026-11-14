@@ -133,13 +133,13 @@ export default function OurStory() {
                 {/* Offset Decorative Border */}
                 <div className="absolute -inset-4 md:-inset-6 border-2 border-[#1e3a8a]/20 rounded-tr-[80px] md:rounded-tr-[120px] rounded-bl-[80px] md:rounded-bl-[120px] rounded-tl-3xl rounded-br-3xl z-0 pointer-events-none"></div>
 
-                {/* Image Container - 3:2 matches the photo, so nothing is cropped */}
-                <div className="relative w-full aspect-[3/2] rounded-tr-[60px] md:rounded-tr-[90px] rounded-bl-[60px] md:rounded-bl-[90px] rounded-tl-3xl rounded-br-3xl overflow-hidden shadow-2xl z-10 bg-[#1e3a8a]">
+                {/* Image Container - 4:3 trims the sides of the 3:2 photo, plus a slight zoom */}
+                <div className="relative w-full aspect-[4/3] rounded-tr-[60px] md:rounded-tr-[90px] rounded-bl-[60px] md:rounded-bl-[90px] rounded-tl-3xl rounded-br-3xl overflow-hidden shadow-2xl z-10 bg-[#1e3a8a]">
                   <div className="absolute inset-0 bg-linear-to-tr from-[#1e3a8a]/40 via-transparent to-transparent z-10 pointer-events-none mix-blend-multiply"></div>
                   <img
                     src="/our-philosophy.webp"
                     alt="The Bharat School students performing with the Indian flag at Reflections in Verse 2025"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover scale-110"
                   />
                 </div>
               </div>

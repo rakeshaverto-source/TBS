@@ -1,5 +1,5 @@
 // Newspaper clippings carried over from the old WordPress site (same file paths, so old image links keep working).
-export const pressImages = [
+const clippings = [
   "/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-10-at-09.56.14-1.jpeg",
   "/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-09-at-10.11.22-1.jpeg",
   "/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-16-at-13.00.10.jpeg",
@@ -108,3 +108,20 @@ export const pressImages = [
   "/wp-content/uploads/2024/12/Asmita-SQAY-2.jpg",
   "/wp-content/uploads/2025/02/4B823C73.jpg"
 ];
+
+// Date of a clipping: the date in a WhatsApp file name when there is one,
+// otherwise the month folder it was uploaded to (start of that month).
+function clippingTime(src) {
+  const m = src.match(/WhatsApp-Image-(\d{4})-(\d{2})-(\d{2})-at-(\d{1,2})\.(\d{2})\.(\d{2})(?:-(AM|PM))?/);
+  if (m) {
+    let hour = Number(m[4]);
+    if (m[7] === "PM" && hour < 12) hour += 12;
+    if (m[7] === "AM" && hour === 12) hour = 0;
+    return Date.UTC(+m[1], +m[2] - 1, +m[3], hour, +m[5], +m[6]);
+  }
+  const folder = src.match(/uploads\/(\d{4})\/(\d{2})\//);
+  return folder ? Date.UTC(+folder[1], +folder[2] - 1, 1) : 0;
+}
+
+// Newest first
+export const pressImages = [...clippings].sort((a, b) => clippingTime(b) - clippingTime(a));

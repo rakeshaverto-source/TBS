@@ -14,7 +14,7 @@ export const beyondAcademicsData = {
   classrooms: {
     title: "Beyond The Classrooms",
     items: [
-      { name: "Music Classes", icon: "Music", href: "#exploring-skills", image: "/beyond-academics/music.webp" },
+      { name: "Music Classes", icon: "Music", href: "#exploring-skills", image: "/beyond-academics/music-class.webp" },
       { name: "Dance Classes", icon: "PersonStanding", href: "#exploring-skills", image: "/beyond-academics/dance-classes.webp" },
       { name: "Science experiments", icon: "FlaskConical", href: "#co-curricular", image: "/beyond-academics/science-experiments.webp" },
       { name: "Field Trips", icon: "Backpack", href: "#field-trips", image: "/beyond-academics/school-trips.webp" },
@@ -47,7 +47,7 @@ export const beyondAcademicsData = {
     },
     music: {
       text: "Our exceptional music programs expose students to various genres and instruments, contributing to their holistic growth. We prioritize providing a rich and diverse musical experience for optimal development.",
-      image: "/beyond-academics/music.webp",
+      image: "/beyond-academics/music-class.webp",
     },
   },
 

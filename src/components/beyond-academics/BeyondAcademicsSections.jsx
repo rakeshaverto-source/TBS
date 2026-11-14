@@ -266,7 +266,7 @@ export function CoCurricular({ data }) {
             <Polaroid src={data.images[1]} alt="Painting" caption="Creativity" rotate={7} className="relative w-full h-full" />
           </div>
           <div className="absolute bottom-0 left-[8%] w-[70%] h-[46%]">
-            <Polaroid src={data.images[2]} alt="Students together" caption="Teamwork" rotate={-3} className="relative w-full h-full" />
+            <Polaroid src={data.images[2]} alt="Students together" caption="Experiential Learning" rotate={-3} className="relative w-full h-full" />
           </div>
         </motion.div>
       </div>

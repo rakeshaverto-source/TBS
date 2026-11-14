@@ -96,7 +96,7 @@ export default function CurriculumModules({ modules }) {
                     {mod.title}
                   </h3>
 
-                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6 whitespace-pre-line">
                     {mod.description}
                   </p>
 
@@ -144,7 +144,7 @@ export default function CurriculumModules({ modules }) {
                   {mod.examSchedule ? (
                     <ExamScheduleTable schedule={mod.examSchedule} />
                   ) : (
-                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-200/80 shadow-md group">
+                  <div className={`relative ${mod.imageAspect || "aspect-[4/3]"} rounded-2xl overflow-hidden border border-slate-200/80 shadow-md group`}>
                     <img
                       src={mod.image}
                       alt={mod.title}
