@@ -290,7 +290,9 @@ function SubmissionsView({ type }) {
 
 function Dashboard({ go }) {
   const counts = {
+    homeLeads: useSubmissions("homeLeads").length,
     tourBookings: useSubmissions("tourBookings").length,
+    contactEnquiries: useSubmissions("contactEnquiries").length,
     jobApplications: useSubmissions("jobApplications").length,
     newsletter: useSubmissions("newsletter").length,
     examReminders: useSubmissions("examReminders").length,

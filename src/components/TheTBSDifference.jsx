@@ -132,11 +132,11 @@ export default function TheTBSDifference() {
                 </div>
 
                 {/* Image */}
-                <div className="w-full lg:w-1/2 h-75 md:h-100">
-                  <img 
-                    src={activeTab.image} 
-                    alt={activeTab.heading} 
-                    className="w-full h-full object-cover shadow-lg"
+                <div className={`w-full lg:w-1/2 ${activeTab.fullImage ? "" : "h-75 md:h-100"}`}>
+                  <img
+                    src={activeTab.image}
+                    alt={activeTab.heading}
+                    className={`w-full shadow-lg ${activeTab.fullImage ? "h-auto" : "h-full object-cover"}`}
                   />
                 </div>
               </motion.div>

@@ -13,7 +13,9 @@ import TheTBSDifference from "@/components/TheTBSDifference";
 import TBSInNumbers from "@/components/TBSInNumbers";
 import CurriculumPillars from "@/components/CurriculumPillars";
 import BeyondPreview from "@/components/BeyondPreview";
+import LeadPopup from "@/components/LeadPopup";
 import { pageMetadata } from "@/lib/seo";
+import { JsonLd, schoolJsonLd } from "@/lib/schema";
 
 export const metadata = pageMetadata({
   title: "Best CBSE Schools in Panchkula - The Bharat School",
@@ -26,6 +28,9 @@ export const metadata = pageMetadata({
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
+      <JsonLd data={schoolJsonLd} />
+      {/* The hero is a photo with no text, so the page's main heading is for search engines and screen readers */}
+      <h1 className="sr-only">The Bharat School – Best CBSE School in Sector 12, Panchkula</h1>
       <Hero />
       <WhyChooseUs />
       <Timeline />
@@ -41,6 +46,7 @@ export default function Home() {
       <ParentsWords />
       <CurriculumPillars />
       <BookTour />
+      <LeadPopup />
     </main>
   );
 }

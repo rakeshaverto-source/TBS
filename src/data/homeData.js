@@ -280,7 +280,8 @@ export const TABS = [
     title: 'Family First',
     heading: 'Family First',
     desc: 'We are excited to announce our new initiative, aiming to strengthen family bonds, foster intergenerational learning, and combat issues such as loneliness, isolation, and depression. Education is a bridge that connects all generations and Family First fully embodies this concept as we aim to connect our families as they learn and grow together.',
-    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/family-first.webp',
+    fullImage: true, // collage: show the whole picture, never crop
     linkText: 'Learn more about Family First'
   }
 ];

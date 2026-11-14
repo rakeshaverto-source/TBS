@@ -30,7 +30,7 @@ const nextConfig = {
       { source: "/category/:slug*", destination: "/blogs", permanent: true },
       { source: "/author/:slug*", destination: "/blogs", permanent: true },
       { source: "/feed", destination: "/blogs", permanent: true },
-      { source: "/:file(sitemap_index|page-sitemap|post-sitemap|wp-sitemap|category-sitemap|author-sitemap).xml", destination: "/sitemap.xml", permanent: true },
+      { source: "/:file(sitemap_index|page-sitemap|post-sitemap|wp-sitemap|category-sitemap|author-sitemap|xpro-themer-sitemap).xml", destination: "/sitemap.xml", permanent: true },
       ...blogPosts.map((p) => ({ source: `/${p.slug}`, destination: `/blogs/${p.slug}`, permanent: true })),
     ];
   },

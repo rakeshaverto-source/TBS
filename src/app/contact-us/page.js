@@ -4,7 +4,7 @@ import CampusCards from "@/components/info/CampusCards";
 import ContactForm from "@/components/info/ContactForm";
 import { CAMPUSES, SOCIALS } from "@/data/schoolInfoData";
 import { pageMetadata } from "@/lib/seo";
-import { SITE_URL } from "@/lib/server/content";
+import { JsonLd, schoolJsonLd } from "@/lib/schema";
 
 export const metadata = pageMetadata({
   title: "Best CBSE Schools in Panchkula - Contact Us",
@@ -15,22 +15,10 @@ export const metadata = pageMetadata({
 
 const tbs = CAMPUSES[0];
 
-const schoolJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "School",
-  name: "The Bharat School",
-  url: SITE_URL,
-  logo: `${SITE_URL}/logo.png`,
-  email: tbs.email,
-  telephone: tbs.phones.map((p) => p.tel),
-  address: { "@type": "PostalAddress", streetAddress: "Sector 12", addressLocality: "Panchkula", addressRegion: "Haryana", postalCode: "134112", addressCountry: "IN" },
-  sameAs: SOCIALS.filter((s) => s.label !== "WhatsApp").map((s) => s.href),
-};
-
 export default function ContactUsPage() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolJsonLd) }} />
+      <JsonLd data={schoolJsonLd} />
       <InfoHero
         crumbs={[{ label: "Contact Us" }]}
         eyebrow="Best CBSE School in Panchkula"
