@@ -87,12 +87,12 @@ export const aboutData = {
     {
       year: "2017",
       icon: "Medal",
-      desc: "President Mr Sanjay Sethi was awarded on Independence Day 2017 for his services in the field of education.",
+      desc: "Director Mr Sanjay Sethi was awarded on Independence Day 2017 for his services in the field of education.",
     },
     {
       year: "2017",
       icon: "GraduationCap",
-      desc: "The British School got affiliated with CBSE.",
+      desc: "CBSE Affiliation",
     },
     {
       year: "2019",

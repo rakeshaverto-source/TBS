@@ -3,7 +3,6 @@
 import React from "react";
 import {
   Calendar,
-  Download,
   Search,
   Clock,
   GraduationCap,
@@ -44,25 +43,6 @@ export default function BeyondCalendar({
             <p className="text-sm text-slate-600 max-w-xl mt-1">
               We register early, prepare seriously, and celebrate every qualifier by name. Review official test windows, eligibility, and preparation dates below.
             </p>
-          </div>
-
-          {/* Quick Actions */}
-          <div className="flex flex-wrap items-center gap-3">
-            <button
-              onClick={() => {
-                window.print();
-              }}
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 shadow-xs transition-all cursor-pointer"
-            >
-              <Download className="w-4 h-4 text-amber-600" />
-              Download / Print
-            </button>
-            <button
-              onClick={() => onOpenReminder(filteredOlympiads[0])}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-red-600 hover:bg-red-500 text-white shadow-md shadow-red-600/20 transition-all cursor-pointer"
-            >
-              Get Exam Alerts
-            </button>
           </div>
         </div>
 
@@ -132,7 +112,7 @@ export default function BeyondCalendar({
                 onChange={(e) => setSelectedGrade(e.target.value)}
                 className="w-full sm:w-auto bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-semibold text-slate-700 focus:outline-none focus:border-[#1e3a8a]"
               >
-                <option value="all">All Grades (1–12)</option>
+                <option value="all">All Classes (1–12)</option>
                 <option value="primary">Primary (Classes 1–5)</option>
                 <option value="middle">Middle Wing (Classes 6–8)</option>
                 <option value="senior">Senior Wing (Classes 9–12)</option>
@@ -149,14 +129,12 @@ export default function BeyondCalendar({
                 <th className="py-4 px-6">Olympiad</th>
                 <th className="py-4 px-6">Official Window</th>
                 <th className="py-4 px-6">Eligible Classes</th>
-                <th className="py-4 px-6">TBS Mentorship Focus</th>
-                <th className="py-4 px-6 text-right">Action</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100 text-sm">
               {filteredOlympiads.length === 0 ? (
                 <tr>
-                  <td colSpan={5} className="py-12 text-center text-slate-500">
+                  <td colSpan={3} className="py-12 text-center text-slate-500">
                     No Olympiads found matching your filter criteria.
                   </td>
                 </tr>
@@ -199,23 +177,6 @@ export default function BeyondCalendar({
                         <GraduationCap className="w-3.5 h-3.5 text-slate-500" />
                         {item.classes}
                       </span>
-                    </td>
-
-                    {/* Mentorship Support */}
-                    <td className="py-5 px-6">
-                      <p className="text-xs text-slate-600 max-w-sm line-clamp-2">
-                        {item.tbsSupport}
-                      </p>
-                    </td>
-
-                    {/* Action */}
-                    <td className="py-5 px-6 text-right">
-                      <button
-                        onClick={() => onOpenReminder(item)}
-                        className="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-blue-50 hover:bg-[#1e3a8a] hover:text-white text-[#1e3a8a] transition-all border border-blue-200 cursor-pointer"
-                      >
-                        Remind Me
-                      </button>
                     </td>
                   </tr>
                 ))
@@ -262,21 +223,10 @@ export default function BeyondCalendar({
                   </div>
                 </div>
 
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  <strong className="text-slate-900">TBS Support: </strong>
-                  {item.tbsSupport}
-                </p>
-
-                <div className="pt-2 flex items-center justify-between border-t border-slate-100">
+                <div className="pt-2 flex items-center border-t border-slate-100">
                   <span className="text-xs text-emerald-700 font-semibold flex items-center gap-1">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> {item.status}
                   </span>
-                  <button
-                    onClick={() => onOpenReminder(item)}
-                    className="px-4 py-1.5 rounded-lg text-xs font-bold bg-[#1e3a8a] text-white hover:bg-blue-900 transition-colors cursor-pointer"
-                  >
-                    Get Alerts
-                  </button>
                 </div>
               </div>
             ))

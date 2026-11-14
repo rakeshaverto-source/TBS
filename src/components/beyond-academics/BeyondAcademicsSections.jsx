@@ -143,7 +143,7 @@ export function BeyondHero({ hero, collage = [] }) {
               <Polaroid src={collage[1].src} alt={collage[1].caption} caption={collage[1].caption} rotate={6} float={2} className="relative w-full h-full" />
             </div>
             <div className="absolute bottom-0 left-[26%] w-[54%] h-[52%]">
-              <Polaroid src={collage[2].src} alt={collage[2].caption} caption={collage[2].caption} rotate={-2} float={3} className="relative w-full h-full" />
+              <Polaroid src={collage[2].src} alt={collage[2].caption} rotate={-2} float={3} className="relative w-full h-full" />
             </div>
             <motion.div
               animate={{ rotate: 360 }}
@@ -260,13 +260,13 @@ export function CoCurricular({ data }) {
         {/* Scattered Polaroids */}
         <motion.div {...reveal} className="relative h-[420px] sm:h-[500px]">
           <div className="absolute top-0 left-0 w-[62%] h-[46%]">
-            <Polaroid src={data.images[0]} alt="Carrom" caption="Strategy" rotate={-6} className="relative w-full h-full hover:rotate-0 transition-transform" />
+            <Polaroid src={data.images[0]} alt="Carrom" rotate={-6} className="relative w-full h-full hover:rotate-0 transition-transform" />
           </div>
           <div className="absolute top-[18%] right-0 w-[55%] h-[44%]">
             <Polaroid src={data.images[1]} alt="Painting" caption="Creativity" rotate={7} className="relative w-full h-full" />
           </div>
           <div className="absolute bottom-0 left-[8%] w-[70%] h-[46%]">
-            <Polaroid src={data.images[2]} alt="Students together" caption="Experiential Learning" rotate={-3} className="relative w-full h-full" />
+            <Polaroid src={data.images[2]} alt="Students together" rotate={-3} className="relative w-full h-full" />
           </div>
         </motion.div>
       </div>
@@ -432,7 +432,7 @@ export function FieldTrips({ data }) {
           >
             <Plane className="w-7 h-7 text-white" />
           </motion.div>
-          <Polaroid src={data.image} alt={data.title} caption="Exploring together" rotate={3} className="relative w-full aspect-[4/3]" />
+          <Polaroid src={data.image} alt={data.title} rotate={3} className="relative w-full aspect-[4/3]" />
         </motion.div>
       </div>
     </section>

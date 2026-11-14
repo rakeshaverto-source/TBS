@@ -296,7 +296,7 @@ export const TIMELINE = [
   {
     year: "2017",
     desc: "CBSE affiliation adopted as the academic backbone.",
-    image: "/2017.png"
+    image: "/2017-cbse.webp"
   },
   {
     year: "2023",

@@ -273,7 +273,7 @@ function SubmissionsView({ type }) {
                   .filter(([k]) => !["id", "createdAt", "status"].includes(k))
                   .map(([k, v]) => (
                     <div key={k} className="min-w-0">
-                      <dt className="text-[11px] font-bold uppercase tracking-wide text-slate-400">{k.replace(/([A-Z])/g, " $1")}</dt>
+                      <dt className="text-[11px] font-bold uppercase tracking-wide text-slate-400">{k.replace(/([a-z0-9])([A-Z])/g, "$1 $2").replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2")}</dt>
                       <dd className="break-words text-sm text-slate-800">{String(v || "—")}</dd>
                     </div>
                   ))}
@@ -294,6 +294,7 @@ function Dashboard({ go }) {
     tourBookings: useSubmissions("tourBookings").length,
     contactEnquiries: useSubmissions("contactEnquiries").length,
     jobApplications: useSubmissions("jobApplications").length,
+    alumniRegistrations: useSubmissions("alumniRegistrations").length,
     newsletter: useSubmissions("newsletter").length,
     examReminders: useSubmissions("examReminders").length,
   };

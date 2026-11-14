@@ -4,6 +4,7 @@ export const SUBMISSION_TYPES = {
   tourBookings: "Campus Tour Bookings",
   contactEnquiries: "Contact Enquiries",
   jobApplications: "Job Applications",
+  alumniRegistrations: "Alumni Registrations",
   newsletter: "Newsletter Subscribers",
   examReminders: "Olympiad Reminders",
 };

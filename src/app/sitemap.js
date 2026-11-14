@@ -12,6 +12,7 @@ const PAGES = [
   "/beyond-the-classroom",
   "/why-families-stay",
   "/careers",
+  "/alumni",
   "/blogs",
   "/contact-us",
   "/helpline-numbers",

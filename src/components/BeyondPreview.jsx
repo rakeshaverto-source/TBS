@@ -9,8 +9,7 @@ import {
   Award,
   Users,
   Calendar,
-  ArrowRight,
-  ChevronRight
+  ArrowRight
 } from "lucide-react";
 import { useContent } from "@/lib/content/store";
 import { getIcon } from "@/lib/icons";
@@ -80,11 +79,6 @@ export default function BeyondPreview() {
                   <p className="text-xs text-slate-600 leading-relaxed">
                     {item.desc}
                   </p>
-                </div>
-
-                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-500 group-hover:text-[#1e3a8a] transition-colors">
-                  <span>Learn more</span>
-                  <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             );

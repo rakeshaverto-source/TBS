@@ -51,12 +51,6 @@ export default function AdmissionsHero() {
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.02] mb-6">
             A clear process.
-            <br />
-            A real number.
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-400 font-serif italic">
-              No surprises.
-            </span>
           </h1>
 
           <p className="text-base sm:text-xl text-slate-200 max-w-xl mb-10 leading-relaxed">

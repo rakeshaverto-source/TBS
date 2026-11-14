@@ -38,7 +38,7 @@ export default function BeyondFeatures() {
               <ul className="space-y-2 text-xs text-slate-500">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-                  Grade-appropriate aptitude diagnostics
+                  Class-wise aptitude diagnostics
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-500" />

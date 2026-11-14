@@ -208,13 +208,15 @@ export default function TBSJourney() {
                 </p>
 
                 {/* Action CTA Button */}
-                <Link
-                  href="/admissions"
+                <a
+                  href="https://tinkerbelle.in/"
+                  target="_blank"
+                  rel="noopener"
                   className="mt-auto inline-flex items-center gap-2 px-6 py-2 rounded-full border-2 border-[#ef4444] text-[#ef4444] hover:bg-[#ef4444] hover:text-white text-xs font-bold tracking-wider uppercase transition-all transform hover:-translate-y-0.5 shadow-sm hover:shadow-md"
                 >
                   <span>Explore Tinkerbelle</span>
                   <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
+                </a>
               </motion.div>
 
 
@@ -276,7 +278,7 @@ export default function TBSJourney() {
 
                 {/* Grade Tag */}
                 <div className="text-[11px] font-black tracking-widest text-[#1e3a8a] uppercase mb-2">
-                  GRADES 1 – 12 (CBSE)
+                  CLASSES 1 – 12 (CBSE)
                 </div>
 
                 {/* Description */}
@@ -286,7 +288,7 @@ export default function TBSJourney() {
 
                 {/* Action CTA Button */}
                 <Link
-                  href="/learning"
+                  href="/core-curriculum"
                   className="mt-auto inline-flex items-center gap-2 px-7 py-2 rounded-full bg-[#1e3a8a] hover:bg-[#172554] text-white text-xs font-bold tracking-wider uppercase transition-all transform hover:-translate-y-0.5 shadow-md hover:shadow-lg"
                 >
                   <span>Explore TBS</span>
@@ -347,10 +349,8 @@ export default function TBSJourney() {
                   </h3>
                 </div>
 
-                {/* Onwards Tag */}
-                <div className="text-[11px] font-black tracking-widest text-[#0284c7] uppercase mb-2">
-                  GRADUATION & BEYOND
-                </div>
+                {/* No tag on the alumni card; empty line keeps the text aligned with the other two cards */}
+                <div className="h-[16.5px] mb-2" aria-hidden="true" />
 
                 {/* Description */}
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-[250px] mb-6 font-normal">

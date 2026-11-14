@@ -189,7 +189,7 @@ export default function SchoolConnection() {
                     <img src="/the bhart school.png" alt="The Bharat School" className="h-7 object-contain" />
                   </div>
                   <span className="text-xs font-bold px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
-                    Grades 1 to 12 (CBSE)
+                    Classes 1 to 12 (CBSE)
                   </span>
                 </div>
 

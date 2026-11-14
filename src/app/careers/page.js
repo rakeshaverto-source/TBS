@@ -260,7 +260,7 @@ export default function CareersPage() {
                 Teaching Faculty Pool
               </span>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-                Educators from Pre-Primary to Grade 12
+                Educators from Pre-Primary to Class 12
               </h3>
               <p className="text-sm text-slate-200 leading-relaxed">
                 Even if your exact subject isn&apos;t listed above, if you have real command of your discipline and genuine warmth with children, we want to hear from you.
