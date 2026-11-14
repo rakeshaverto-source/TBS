@@ -9,11 +9,11 @@ export default function TheTBSDifference() {
   const TABS = useContent("home").difference;
   const [activeIdx, setActiveIdx] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  
+
   const handleNext = useCallback(() => {
     setActiveIdx((prev) => (prev + 1) % TABS.length);
   }, [TABS.length]);
-  
+
   const handlePrev = useCallback(() => {
     setActiveIdx((prev) => (prev - 1 + TABS.length) % TABS.length);
   }, [TABS.length]);
@@ -32,37 +32,36 @@ export default function TheTBSDifference() {
   const activeTab = TABS[activeIdx % TABS.length] || TABS[0];
 
   return (
-    <section 
+    <section
       className="relative w-full py-20 overflow-hidden bg-white"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
       {/* Background Dotted Patterns */}
-      <div className="absolute top-0 left-0 w-64 h-64 opacity-10 pointer-events-none" 
-           style={{ backgroundImage: 'radial-gradient(#1e3a8a 2px, transparent 2px)', backgroundSize: '20px 20px' }}></div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 opacity-10 pointer-events-none" 
-           style={{ backgroundImage: 'radial-gradient(#1e3a8a 2px, transparent 2px)', backgroundSize: '20px 20px' }}></div>
+      <div className="absolute top-0 left-0 w-64 h-64 opacity-10 pointer-events-none"
+        style={{ backgroundImage: 'radial-gradient(#1e3a8a 2px, transparent 2px)', backgroundSize: '20px 20px' }}></div>
+      <div className="absolute bottom-0 right-0 w-64 h-64 opacity-10 pointer-events-none"
+        style={{ backgroundImage: 'radial-gradient(#1e3a8a 2px, transparent 2px)', backgroundSize: '20px 20px' }}></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Header */}
         <h2 className="text-3xl md:text-4xl font-semibold text-center text-[#1e3a8a] mb-12">
-          The TBS Difference
+          Our Core Pillars
         </h2>
 
         {/* Tabs */}
         <div className="relative mb-16">
           {/* Added horizontal scroll for tabs */}
-          <div 
+          <div
             className="flex overflow-x-auto items-center justify-start md:justify-center pb-4 scroll-smooth hide-scrollbar"
           >
             {TABS.map((tab, idx) => (
               <React.Fragment key={tab.id}>
                 <button
                   onClick={() => setActiveIdx(idx)}
-                  className={`shrink-0 whitespace-nowrap text-sm md:text-base font-bold transition-colors duration-300 px-4 py-2 ${
-                    activeIdx === idx ? 'text-[#e1251b]' : 'text-[#1e3a8a] hover:text-[#e1251b]/80'
-                  }`}
+                  className={`shrink-0 whitespace-nowrap text-sm md:text-base font-bold transition-colors duration-300 px-4 py-2 ${activeIdx === idx ? 'text-[#e1251b]' : 'text-[#1e3a8a] hover:text-[#e1251b]/80'
+                    }`}
                 >
                   {tab.title}
                 </button>
@@ -79,9 +78,9 @@ export default function TheTBSDifference() {
 
         {/* Content Carousel */}
         <div className="flex items-center justify-between gap-4 md:gap-8 relative">
-          
+
           {/* Prev Arrow */}
-          <button 
+          <button
             onClick={handlePrev}
             className="hidden md:flex shrink-0 items-center justify-center w-10 h-10 rounded-full border border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white transition-colors"
           >
@@ -118,7 +117,7 @@ export default function TheTBSDifference() {
                   <p className="text-gray-700 leading-relaxed mb-8">
                     {activeTab.desc}
                   </p>
-                  
+
                   <div>
                     <a href="#" className="inline-flex items-center group">
                       <div className="relative font-bold text-[#1e3a8a] pb-1">
@@ -144,7 +143,7 @@ export default function TheTBSDifference() {
           </div>
 
           {/* Next Arrow */}
-          <button 
+          <button
             onClick={handleNext}
             className="hidden md:flex shrink-0 items-center justify-center w-10 h-10 rounded-full border bg-gray-400 text-white border-transparent hover:bg-[#1e3a8a] transition-colors"
           >
@@ -152,16 +151,16 @@ export default function TheTBSDifference() {
           </button>
 
         </div>
-        
+
         {/* Mobile Navigation Arrows (shown only on small screens) */}
         <div className="flex md:hidden items-center justify-center gap-6 mt-8">
-          <button 
+          <button
             onClick={handlePrev}
             className="flex items-center justify-center w-10 h-10 rounded-full border border-[#1e3a8a] text-[#1e3a8a]"
           >
             <ChevronLeft size={24} strokeWidth={1.5} />
           </button>
-          <button 
+          <button
             onClick={handleNext}
             className="flex items-center justify-center w-10 h-10 rounded-full border bg-gray-400 text-white border-transparent"
           >

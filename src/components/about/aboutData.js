@@ -2,7 +2,7 @@ export const aboutData = {
   intro: {
     title: "About Our School",
     image: "/about-school.webp",
-    text: "The establishment of this esteemed institution was initiated with a profound sense of compassion and a dedicated mission to influence the trajectory of the nation's future through the provision of exemplary resources and effective learning programs. The Bharat School is committed to the implementation of conscientious learning methodologies, thereby contributing to the refinement of the educational landscape and fostering superior outcomes.",
+    text: "The Bharat School was initiated with a profound sense of compassion and a dedicated mission to influence the trajectory of the nation's future through the provision of exemplary resources and effective learning programs. The Bharat School is committed to the implementation of conscientious learning methodologies, thereby contributing to the refinement of the educational landscape and fostering superior outcomes.",
   },
 
   mentors: {

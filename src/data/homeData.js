@@ -156,13 +156,13 @@ export const statsData = [
   {
     id: 1,
     top: { type: 'image', bgUrl: '/Why.jpeg' },
-    bottom: { 
-      type: 'content', 
+    bottom: {
+      type: 'content',
       countNum: 21,
       suffix: '+',
-      title: 'Years of Legacy', 
+      title: 'Years of Legacy',
       desc: 'Our story began in 2005...',
-      color: 'bg-white', 
+      color: 'bg-white',
       textColor: 'text-slate-800',
       countColor: 'text-[#1e3a8a]',
       link: '#legacy'
@@ -170,13 +170,13 @@ export const statsData = [
   },
   {
     id: 2,
-    top: { 
-      type: 'content', 
+    top: {
+      type: 'content',
       countNum: 1000,
       suffix: '+',
-      title: 'Students educated', 
+      title: 'Students educated',
       desc: 'over our history',
-      color: 'bg-white', 
+      color: 'bg-white',
       textColor: 'text-slate-800',
       countColor: 'text-[#1e3a8a]',
       link: '#students'
@@ -186,13 +186,13 @@ export const statsData = [
   {
     id: 3,
     top: { type: 'image', bgUrl: '/numbers-alumni.webp' },
-    bottom: { 
-      type: 'content', 
+    bottom: {
+      type: 'content',
       countNum: 500,
       suffix: '+',
-      title: 'University Placements', 
+      title: 'University Placements',
       desc: 'In national and international universities.',
-      color: 'bg-[#009de0]', 
+      color: 'bg-[#009de0]',
       textColor: 'text-white',
       countColor: 'text-white',
       link: '#placements'
@@ -200,13 +200,13 @@ export const statsData = [
   },
   {
     id: 4,
-    top: { 
-      type: 'content', 
+    top: {
+      type: 'content',
       countNum: 1000,
       suffix: '+',
-      title: 'Alumni Network', 
-      desc: 'A robust global network of leaders.',
-      color: 'bg-white', 
+      title: 'Alumni Network',
+      desc: 'A robust global network of entrepreneurs.',
+      color: 'bg-white',
       textColor: 'text-slate-800',
       countColor: 'text-[#1e3a8a]',
     },
@@ -215,8 +215,8 @@ export const statsData = [
   {
     id: 5,
     top: { type: 'image', bgUrl: '/numbers-alumni-network.webp' },
-    bottom: { 
-      type: 'content', 
+    bottom: {
+      type: 'content',
       countNum: 50,
       suffix: '+',
       title: 'Leadership Awards',
@@ -227,13 +227,13 @@ export const statsData = [
   },
   {
     id: 6,
-    top: { 
-      type: 'content', 
+    top: {
+      type: 'content',
       countNum: 100,
       suffix: '+',
-      title: 'Employees', 
+      title: 'Employees',
       desc: 'Dedicated to student success.',
-      color: 'bg-white', 
+      color: 'bg-white',
       textColor: 'text-slate-800',
       countColor: 'text-[#1e3a8a]',
     },
@@ -290,7 +290,7 @@ export const TABS = [
 export const TIMELINE = [
   {
     year: "2005",
-    desc: "Founded — one of Panchkula's first schools built on Cambridge-standard rigor.",
+    desc: "Foundation of Panchkula's 1st Cambridge affiliated school",
     image: "/2005.png"
   },
   {
@@ -300,7 +300,7 @@ export const TIMELINE = [
   },
   {
     year: "2023",
-    desc: "Renamed The Bharat School, in step with NEP 2020.",
+    desc: "Renamed The Bharat School, in sync with NEP 2020.",
     image: "/school-building.webp",
     fit: "cover"
   },
